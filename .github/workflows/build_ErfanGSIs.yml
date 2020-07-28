@@ -46,20 +46,27 @@ jobs:
        - name: Download Stock Rom & Generate GSI
          run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
        
-       - name: Zip Aonly and upload 
+       - name: Zipping Aonly
          run: |
               mkdir final
               sudo chmod -R 777 ErfanGSIs/output
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img
              
-       - name: uploading Aonly zip
+       - name: uploading Aonly.zip
          run: |    
               curl -sL https://git.io/file-transfer | sh
-              ./transfer gof ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z          
-       - name: Zip AB and upload 
+              ./transfer gof ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z 
+                       
+       - name: Zipping AB
          run: |
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
+              
+       - name: uploading AB.zip
+         run: |
               ./transfer gof ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
-       - name: Upload build info
+              
+       - name: Upload Build Informations
          run: |
               ./transfer gof ErfanGSIs/output/*-Aonly-*.txt
+              
+       - name: Baked:)      
