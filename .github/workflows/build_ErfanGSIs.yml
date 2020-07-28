@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://mirrors.lolinet.com/firmware/lenovo/l79031/L79031_ROW_OPEN_USER_Q00114.1a_Q_ROW_12.0.099_ST_200721_qpst.zip
-  ROM_NAME: Generic:ZUI
-  ZIP_NAME: ZUI-Helios
+  ROM_URL: https://tdrive.manofuranium.workers.dev/f4833756f2e76fcb818489dfc7492fa50dfd03ef.zip
+  ROM_NAME: Generic:Nokia
+  ZIP_NAME: Nokia-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
