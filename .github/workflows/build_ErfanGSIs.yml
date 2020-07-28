@@ -37,7 +37,7 @@ jobs:
        - name: processing ErfanGSIs code 
          run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
        
-       - name: Setting up ErfanGSI requirements
+       - name: Setting up requirements and permissions
          run: |
               sudo chmod -R 777 ErfanGSIs
               cd ErfanGSIs
@@ -51,6 +51,9 @@ jobs:
               mkdir final
               sudo chmod -R 777 ErfanGSIs/output
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img
+             
+       - name: uploading Aonly zip
+         run: |    
               curl -sL https://git.io/file-transfer | sh
               ./transfer gof ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z          
        - name: Zip AB and upload 
