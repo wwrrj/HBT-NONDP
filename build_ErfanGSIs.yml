@@ -1,0 +1,81 @@
+name: Starting to Bake....
+
+on:
+#  release:
+#    types: [published]
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - '.config'
+#  schedule:
+#    - cron: 0 8 * * 5
+  watch:
+    types: [started]
+    
+env:
+  ROM_URL: http://download.h2os.com/5T/MP/OnePlus5THydrogen_43_OTA_062_all_2005291737_04f9b97b5ae84d67.zip
+  ROM_NAME: OxygenOS:HydrogenOS
+  ZIP_NAME: HydrogenOS-Helios
+  TZ: Middle-East/Kuwait
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
+    steps:
+       - name: Checkout
+         uses: actions/checkout@master
+           
+       - name: Initializing the required files
+         run: |
+            sudo -E apt-get -qq update
+            sudo -E apt-get -qq install git openjdk-8-jdk wget
+            
+       - name: Getting python requiremnets
+         run: |
+              pip install pyrogram tgcrypto    
+              
+       -name: setting up some extras
+        run: |
+           sudo -E apt-get -qq update
+           sudo -E apt-get -qq install simg2img      
+            
+
+       - name: Clone ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs
+       
+       - name: Setting up ErfanGSIs req
+         run: |
+              sudo chmod -R 777 ErfanGSIs
+              cd ErfanGSIs
+              sudo bash setup.sh
+       
+       - name: Download Stock Rom & Generate GSI
+         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
+       
+       - name: Zip up the Aonly 
+         run: |
+              mkdir final
+              sudo chmod -R 777 ErfanGSIs/output
+              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img
+       -name: Uploading Aonly.zip
+        run:  |      
+              curl -sL https://git.io/file-transfer | sh
+              ./transfer gof ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z          
+       - name: Zip up the ABonly 
+         run: |
+              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
+        -name: Uploading ABonly.zip
+          run: |      
+              ./transfer gof ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z 
+              
+                   
+       - name: Upload build info
+         run: |
+              ./transfer gof ErfanGSIs/output/*-Aonly-*.txt
+              
+        -name: Baked :))      
+         
+            
