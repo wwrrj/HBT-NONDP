@@ -70,3 +70,4 @@ jobs:
               ./transfer gof ErfanGSIs/output/*-Aonly-*.txt
               
        - name: Baked:)      
+         run: sudo rm -rf ErfanGSIs
