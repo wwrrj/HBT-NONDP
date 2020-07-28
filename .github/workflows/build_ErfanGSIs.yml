@@ -20,7 +20,11 @@ jobs:
 
     steps:
        - name: Checkout
-         uses: actions/checkout@master
+         uses: actions/checkout@main
+         
+       - name: Install python requirements
+         run: |
+              pip install pyrogram tgcrypto
            
        - name: Setting up the workflow 
          run: |
