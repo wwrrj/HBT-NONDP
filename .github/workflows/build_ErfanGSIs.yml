@@ -28,13 +28,14 @@ jobs:
        - name: Checkout
          uses: actions/checkout@master
            
-       - name: Initializing environment
+       - name: Setting up the wowrkflow 
          run: |
             sudo -E apt-get -qq update
             sudo -E apt-get -qq install git openjdk-8-jdk wget
+            sudo -E apt-get -qq install python3
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
        
        - name: Setting up ErfanGSI requirements
          run: |
