@@ -64,9 +64,13 @@ jobs:
          run: |
               ./transfer gof ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
               
-       - name: Upload Build Informations
+       - name: Upload Build Informations and Baked:)
          run: |
               ./transfer gof ErfanGSIs/output/*-Aonly-*.txt
-              
-       - name: Baked:)      
-         run: sudo rm -rf ErfanGSIs
+         
+
+                                                  
+
+  
+         
+     
