@@ -1,9 +1,7 @@
 name: Time to Bake...
 
-on: [push];
-
-  watch:
-     types: [started]
+  watch: 
+      types: [started]
     
 env:
   ROM_URL: http://download.h2os.com/5T/MP/OnePlus5THydrogen_43_OTA_062_all_2005291737_04f9b97b5ae84d67.zip
