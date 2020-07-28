@@ -28,13 +28,13 @@ jobs:
        - name: Checkout
          uses: actions/checkout@master
            
-       - name: Setting up the wowrkflow 
+       - name: Setting up the workflow 
          run: |
             sudo -E apt-get -qq update
             sudo -E apt-get -qq install git openjdk-8-jdk wget
             sudo -E apt-get -qq install python3
        
-       - name: Clone ErfanGSI Source Code
+       - name: processing ErfanGSIs code 
          run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
        
        - name: Setting up ErfanGSI requirements
@@ -52,11 +52,11 @@ jobs:
               sudo chmod -R 777 ErfanGSIs/output
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img
               curl -sL https://git.io/file-transfer | sh
-              ./transfer bit ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z          
+              ./transfer gof ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z          
        - name: Zip AB and upload 
          run: |
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
-              ./transfer bit ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
+              ./transfer gof ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
        - name: Upload build info
          run: |
-              ./transfer bit ErfanGSIs/output/*-Aonly-*.txt
+              ./transfer gof ErfanGSIs/output/*-Aonly-*.txt
