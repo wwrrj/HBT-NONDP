@@ -31,12 +31,7 @@ jobs:
        - name: Initializing the required files
          run: |
             sudo -E apt-get -qq update
-            sudo -E apt-get -qq install git openjdk-8-jdk wget
-              
-       -name: setting up some extras
-        run: |
-           sudo -E apt-get -qq update
-           sudo -E apt-get -qq install simg2img      
+            sudo -E apt-get -qq install git openjdk-8-jdk wget      
             
        - name: Clone ErfanGSIs
          run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs
