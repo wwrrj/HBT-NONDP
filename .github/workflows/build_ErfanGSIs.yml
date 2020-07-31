@@ -8,7 +8,7 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/Mi9T-RedmiK20_MIUI_V12.0.3.0.QFJCNXM_MiRoom_10.0.zip
+  ROM_URL: https://master.dl.sourceforge.net/project/helios-gsis/MIUI/masik.zip
   ROM_NAME: MIUI
   ZIP_NAME: MIUI-Helios
   TZ: Middle-East/Kuwait
