@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/16s_Pro/8.20.7.27/cn_daily/20200727002123/bcff7ab2/update.zip
-  ROM_NAME: Flyme
-  ZIP_NAME: Flyme-Helios
+  ROM_URL: wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1neT6AyCDh1XmexKLZ7gjLxn5ZVbSvkrx' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1neT6AyCDh1XmexKLZ7gjLxn5ZVbSvkrx" -O Motorola_Moto_G_Fast_XT2045-3_RAV_RETUS_10_QPJ30.131-16_10_(by_motostockrom.com).zip && rm -rf /tmp/cookies.txt
+  ROM_NAME: Generic:Moto
+  ZIP_NAME: Moto-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
