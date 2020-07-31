@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://mirrors.lolinet.com/firmware/lenovo/l79031/L79031_ROW_SECURE_USER_Q00094.1a_Q_ROW_12.0.073_ST_200702_qpst.zip
-  ROM_NAME: Generic:ZUI
-  ZIP_NAME: ZUI-Helios
+  ROM_URL: http://tdrive.manofuranium.workers.dev/update.zip
+  ROM_NAME: Flyme
+  ZIP_NAME: Flyme-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
