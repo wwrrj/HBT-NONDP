@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: wget --load-cookies /tmp/cookies.txt "http://tdrive.manofuranium.workers.dev/OnePlus6Oxygen_22_OTA_047_all_2007191515_d9e52461.zip(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1neT6AyCDh1XmexKLZ7gjLxn5ZVbSvkrx' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1neT6AyCDh1XmexKLZ7gjLxn5ZVbSvkrx" -O Motorola_Moto_G_Fast_XT2045-3_RAV_RETUS_10_QPJ30.131-16_10_(by_motostockrom.com).zip && rm -rf /tmp/cookies.txt
-  ROM_NAME: Generic:Oxygen
-  ZIP_NAME: Oxygen-Helios
+  ROM_URL: http://tdrive.manofuranium.workers.dev/update.zip
+  ROM_NAME: Flyme
+  ZIP_NAME: Flyme-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
