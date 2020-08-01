@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://svwh.dl.sourceforge.net/project/helios-gsis/MIUI/masik.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI-Helios
+  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus6Oxygen/OnePlus6Oxygen_22.J.47_GLO_047_2007191515/OnePlus6Oxygen_22_OTA_047_all_2007191515_d9e52461.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: OxygenOS-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
