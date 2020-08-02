@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus6Oxygen/OnePlus6Oxygen_22.J.47_GLO_047_2007191515/OnePlus6Oxygen_22_OTA_047_all_2007191515_d9e52461.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: OxygenOS-Helios
+  ROM_URL: http://otafsc1.h2os.com/patch/CHN/OnePlus6Hydrogen/OnePlus6Hydrogen_22.K.45_045_2007191519/OnePlus6Hydrogen_22_OTA_045_all_2007191519_734ede.zip
+  ROM_NAME: OxygenOS:HydrogenOS
+  ZIP_NAME: HydrogenOS-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
