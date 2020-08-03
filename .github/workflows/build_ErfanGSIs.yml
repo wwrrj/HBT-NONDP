@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://phoenixnap.dl.sourceforge.net/project/helios-gsis/DebugBuildsDontDownload/KSA-A920FXXU3CTF9-20200729141601.zip
-  ROM_NAME: Generic:OneUI
-  ZIP_NAME: OneUI-Helios
+  ROM_URL: https://dl.google.com/dl/android/aosp/taimen-qq3a.200805.001-factory-305df20c.zip
+  ROM_NAME: Pixel
+  ZIP_NAME: Pixel-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
