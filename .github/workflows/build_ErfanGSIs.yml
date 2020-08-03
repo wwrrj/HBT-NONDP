@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://otafsc1.h2os.com/patch/CHN/OnePlus6Hydrogen/OnePlus6Hydrogen_22.K.45_045_2007191519/OnePlus6Hydrogen_22_OTA_045_all_2007191519_734ede.zip
-  ROM_NAME: OxygenOS:HydrogenOS
-  ZIP_NAME: HydrogenOS-Helios
+  ROM_URL: https://phoenixnap.dl.sourceforge.net/project/helios-gsis/DebugBuildsDontDownload/KSA-A920FXXU3CTF9-20200729141601.zip
+  ROM_NAME: Generic:OneUI
+  ZIP_NAME: OneUI-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
