@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://dl.google.com/dl/android/aosp/taimen-qq3a.200805.001-factory-305df20c.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: Oxygen-Helios
+  ROM_URL: https://download.meizu.com/Firmware/Flyme/note9/8.20.8.4/cn_daily/20200804003754/b3b0d3b6/update.zip
+  ROM_NAME: Flyme
+  ZIP_NAME: ReqFlyme-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
