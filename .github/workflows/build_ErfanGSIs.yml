@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS600KL/UL-ASUS_Z01QD_1-CN-16.0420.2003.24-1.1.65-user.zip
-  ROM_NAME: ZenUI:ROGUI
-  ZIP_NAME: ROG-Helios
+  ROM_URL: https://bigota.d.miui.com/V11.0.12.0.QDIMIXM/miui_JASMINEGlobal_V11.0.12.0.QDIMIXM_388f4a96f7_10.0.zip
+  ROM_NAME: MIUI:ONE
+  ZIP_NAME: MIUIONE-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
