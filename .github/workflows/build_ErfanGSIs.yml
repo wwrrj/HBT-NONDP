@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://download.zteusa.com/products/axon-10-pro/ZTE_Axon10Pro_V2.0.0B06_SD.zip
-  ROM_NAME: Generic:ZTE
-  ZIP_NAME: ZTE-Helios
+  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS600KL/UL-ASUS_Z01QD_1-CN-16.0420.2003.24-1.1.65-user.zip
+  ROM_NAME: ZenUI:ROGUI
+  ZIP_NAME: ROG-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
             sudo -E apt-get -qq install simg2img
        
        - name: processing ErfanGSIs code 
-         run: git clone --recurse-submodules https://github.com/123ridhin/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs.git
        
        - name: Setting up requirements and permissions
          run: |
