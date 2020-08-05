@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/note9/8.20.8.4/cn_daily/20200804003754/b3b0d3b6/update.zip
-  ROM_NAME: Flyme
-  ZIP_NAME: ReqFlyme-Helios
+  ROM_URL: https://download.zteusa.com/products/axon-10-pro/ZTE_Axon10Pro_V2.0.0B06_SD.zip
+  ROM_NAME: Generic:ZTE
+  ZIP_NAME: ZTE-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
