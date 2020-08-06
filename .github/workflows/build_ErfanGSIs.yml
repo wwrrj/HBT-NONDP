@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://bigota.d.miui.com/V11.0.12.0.QDIMIXM/miui_JASMINEGlobal_V11.0.12.0.QDIMIXM_388f4a96f7_10.0.zip
-  ROM_NAME: MIUI:ONE
-  ZIP_NAME: MIUIONE-Helios
+  ROM_URL: https://dl.google.com/developers/android/rvc/images/factory/taimen-rpb3.200720.005-factory-0396f427.zip
+  ROM_NAME: Pixel
+  ZIP_NAME: Pixel-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
