@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://dl.google.com/developers/android/rvc/images/factory/taimen-rpb3.200720.005-factory-0396f427.zip
-  ROM_NAME: Pixel
-  ZIP_NAME: Pixel-Helios
+  ROM_URL: http://download.h2os.com/OnePlus6/MP/OnePlus6Hydrogen_22_OTA_045_all_2007191519_ee6c4149df3441ca.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: OxygenOS-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
