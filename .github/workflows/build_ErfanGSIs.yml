@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS600KL/UL-ASUS_Z01QD_1-ASUS-16.0420.1911.6-1.1.134-user.zip
-  ROM_NAME: RogUI
-  ZIP_NAME: RogUI-Helios
+  ROM_URL: https://download.meizu.com/Firmware/Flyme/16s_Pro/8.20.8.6/cn_daily/20200806002124/8990e771/update.zip
+  ROM_NAME: Flyme
+  ZIP_NAME: Flyme-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
             sudo -E apt-get -qq install simg2img
        
        - name: processing ErfanGSIs code 
-         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/123ridhin/ErfanGSIs.git
        
        - name: Setting up requirements and permissions
          run: |
