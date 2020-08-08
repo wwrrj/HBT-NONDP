@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://download.h2os.com/OnePlus6/MP/OnePlus6Hydrogen_22_OTA_045_all_2007191519_ee6c4149df3441ca.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: OxygenOS-Helios
+  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS600KL/UL-ASUS_Z01QD_1-ASUS-16.0420.1911.6-1.1.134-user.zip
+  ROM_NAME: RogUI
+  ZIP_NAME: RogUI-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
