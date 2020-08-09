@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/16s_Pro/8.20.8.6/cn_daily/20200806002124/8990e771/update.zip
-  ROM_NAME: Flyme
-  ZIP_NAME: Flyme-Helios
+  ROM_URL: https://phoenixnap.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv11/xiaomi.eu_multi_HMK20MI9T_V11.0.6.0.QFJCNXM_v11-10.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI-Helios
   TZ: Middle-East/Kuwait
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
             sudo -E apt-get -qq install simg2img
        
        - name: processing ErfanGSIs code 
-         run: git clone --recurse-submodules https://github.com/123ridhin/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs.git
        
        - name: Setting up requirements and permissions
          run: |
@@ -51,7 +51,7 @@ jobs:
        - name: uploading Aonly.zip
          run: |    
               curl -sL https://git.io/file-transfer | sh
-              ./transfer gof ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z 
+              ./transfer trs ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z 
                        
        - name: Zipping AB
          run: |
@@ -59,11 +59,11 @@ jobs:
               
        - name: uploading AB.zip
          run: |
-              ./transfer gof ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
+              ./transfer trs ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
               
        - name: Upload Build Informations and Baked:)
          run: |
-              ./transfer gof ErfanGSIs/output/*-Aonly-*.txt
+              ./transfer trs ErfanGSIs/output/*-Aonly-*.txt
          
 
                                                   
