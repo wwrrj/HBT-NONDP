@@ -12,7 +12,7 @@ env:
   ROM_NAME: MIUI
   ZIP_NAME: MIUI-Helios
   TZ: Middle-East/Kuwait
-  MIR_NAME: wss
+  MIR_NAME: flk
 
 jobs:
   build:
