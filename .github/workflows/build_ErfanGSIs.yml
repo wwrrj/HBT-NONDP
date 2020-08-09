@@ -51,19 +51,19 @@ jobs:
        - name: uploading Aonly.zip
          run: |    
               curl -sL https://git.io/file-transfer | sh
-              ./transfer trs ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z 
-                       
+              ./transfer gof ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z 
+                     
        - name: Zipping AB
          run: |
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               
        - name: uploading AB.zip
          run: |
-              ./transfer trs ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
+              ./transfer gof ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
               
        - name: Upload Build Informations and Baked:)
          run: |
-              ./transfer trs ErfanGSIs/output/*-Aonly-*.txt
+              ./transfer gof ErfanGSIs/output/*-Aonly-*.txt
          
 
                                                   
