@@ -12,6 +12,7 @@ env:
   ROM_NAME: MIUI
   ZIP_NAME: MIUI-Helios
   TZ: Middle-East/Kuwait
+  MIR_NAME: gof
 
 jobs:
   build:
@@ -51,7 +52,7 @@ jobs:
        - name: uploading Aonly.zip
          run: |    
               curl -sL https://git.io/file-transfer | sh
-              ./transfer gof ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z 
+              ./transfer $MIR_NAME ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z 
                      
        - name: Zipping AB
          run: |
@@ -59,11 +60,11 @@ jobs:
               
        - name: uploading AB.zip
          run: |
-              ./transfer gof ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
+              ./transfer $MIR_NAME ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
               
        - name: Upload Build Informations and Baked:)
          run: |
-              ./transfer gof ErfanGSIs/output/*-Aonly-*.txt
+              ./transfer $MIR_NAME ErfanGSIs/output/*-Aonly-*.txt
          
 
                                                   
