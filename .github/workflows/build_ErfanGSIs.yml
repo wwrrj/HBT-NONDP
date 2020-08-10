@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/du_walleye-v14.5-20200806-1325-UNOFFICIAL.zip
-  ROM_NAME: Generic:DirtyUnicorns
-  ZIP_NAME: DU-Helios
+  ROM_URL: https://download.meizu.com/Firmware/Flyme/16T/8.20.8.6/cn_daily/20200806003517/faca8685/update.zip
+  ROM_NAME: Flyme
+  ZIP_NAME: Flyme-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME: gof
 
@@ -32,7 +32,7 @@ jobs:
             sudo -E apt-get -qq install simg2img
        
        - name: processing ErfanGSIs code 
-         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/adamayyad/ErfanGSIs.git
        
        - name: Setting up requirements and permissions
          run: |
