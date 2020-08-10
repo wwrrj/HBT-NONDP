@@ -8,7 +8,7 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/16T/8.20.8.6/cn_daily/20200806003517/faca8685/update.zip
+  ROM_URL: http://tdrive.manofuranium.workers.dev/update.zip
   ROM_NAME: Flyme
   ZIP_NAME: Flyme-Helios
   TZ: Middle-East/Kuwait
