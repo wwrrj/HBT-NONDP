@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://netcologne.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv11/xiaomi.eu_multi_HMK20MI9T_V11.0.6.0.QFJCNXM_v11-10.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI-Helios
+  ROM_URL: http://tdrive.manofuranium.workers.dev/du_walleye-v14.5-20200806-1325-UNOFFICIAL.zip
+  ROM_NAME: Generic:DirtyUnicorns
+  ZIP_NAME: DU-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME: gof
 
