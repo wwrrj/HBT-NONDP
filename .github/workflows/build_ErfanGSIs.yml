@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://download.c.realme.com/osupdate/RMX1931EX_11_OTA_1290_all_6Q1G7PnXC7fy.ozip
-  ROM_NAME: ColorOS
-  ZIP_NAME: ColorOS-Helios
+  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS630KL/UL-ASUS_I01WD-ASUS-17.1810.2007.165-1.1.1-user.zip
+  ROM_NAME: ZenUI
+  ZIP_NAME: ZenUI-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME: gof
 
@@ -32,7 +32,7 @@ jobs:
             sudo -E apt-get -qq install simg2img
        
        - name: processing ErfanGSIs code 
-         run: git clone --recurse-submodules https://github.com/123ridhin/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs.git
        
        - name: Setting up requirements and permissions
          run: |
