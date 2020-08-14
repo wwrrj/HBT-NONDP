@@ -8,8 +8,8 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS630KL/UL-ASUS_I01WD-ASUS-17.1810.2007.165-1.1.1-user.zip
-  ROM_NAME: ZenUI
+  ROM_URL: http://download.h2os.com/OnePlus6T/MP/OnePlus6THydrogen_34_OTA_045_all_2007172007_66c88c1e043f41b4.zip
+  ROM_NAME: OxygenOS:HydrogenOS
   ZIP_NAME: ZenUI-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME: gof
