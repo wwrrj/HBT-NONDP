@@ -10,7 +10,7 @@ on:
 env:
   ROM_URL: http://download.h2os.com/OnePlus6T/MP/OnePlus6THydrogen_34_OTA_045_all_2007172007_66c88c1e043f41b4.zip
   ROM_NAME: OxygenOS:HydrogenOS
-  ZIP_NAME: ZenUI-Helios
+  ZIP_NAME: HydrogenOS-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME: gof
 
