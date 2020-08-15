@@ -8,7 +8,7 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://mirrors.lolinet.com/firmware/lenovo/l79031/L79031_ROW_OPEN_USER_Q00114.1a_Q_ROW_12.0.099_ST_200721_qpst.zip
+  ROM_URL: https://netcologne.dl.sourceforge.net/project/helios-gsis/ZUI/Zui12.rar
   ROM_NAME: ZUI
   ZIP_NAME: ZUI--Helios
   TZ: Middle-East/Kuwait
