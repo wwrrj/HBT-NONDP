@@ -8,11 +8,12 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://pilotfiber.dl.sourceforge.net/project/helios-gsis/ZUI/Zui12.rar
-  ROM_NAME: ZUI
-  ZIP_NAME: ZUI--Helios
+  ROM_URL: http://rom.download.nubia.com/Europe/NX659J/V409/NX659J-update.zip
+  ROM_NAME: Nubia
+  ZIP_NAME: Nubia-Helios
   TZ: Middle-East/Kuwait
-  MIR_NAME: gof
+  MIR_NAME1: gof
+  MIR_NAME2: wet
 
 jobs:
   build:
@@ -32,7 +33,7 @@ jobs:
             sudo -E apt-get -qq install simg2img
        
        - name: processing ErfanGSIs code 
-         run: git clone --recurse-submodules https://github.com/123ridhin/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs.git
        
        - name: Setting up requirements and permissions
          run: |
@@ -49,18 +50,18 @@ jobs:
               sudo chmod -R 777 ErfanGSIs/output
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img
              
-       - name: uploading Aonly.zip
+       - name: uploading to MIR1 and MIR2 Aonly.zip 
          run: |    
               curl -sL https://git.io/file-transfer | sh
-              ./transfer $MIR_NAME ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z 
+              ./transfer $MIR_NAME1 ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z && ./transfer $MIR_NAME2 ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z
                      
        - name: Zipping AB
          run: |
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               
-       - name: uploading AB.zip
+       - name: uploading to MIR1 and MIR2 AB.zip
          run: |
-              ./transfer $MIR_NAME ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
+              ./transfer $MIR_NAME ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z && ./transfer $MIR_NAM2 ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z     
               
        - name: Upload Build Informations and Baked:)
          run: |
