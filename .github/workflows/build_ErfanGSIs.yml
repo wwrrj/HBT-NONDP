@@ -8,7 +8,7 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://netcologne.dl.sourceforge.net/project/helios-gsis/ZUI/Zui12.rar
+  ROM_URL: https://pilotfiber.dl.sourceforge.net/project/helios-gsis/ZUI/Zui12.rar
   ROM_NAME: ZUI
   ZIP_NAME: ZUI--Helios
   TZ: Middle-East/Kuwait
