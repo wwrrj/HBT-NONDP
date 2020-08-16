@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://rom.download.nubia.com/Europe/NX659J/V409/NX659J-update.zip
-  ROM_NAME: Nubia
-  ZIP_NAME: Nubia-Helios
+  ROM_URL: https://assorted.downloads.oppo.com/firmware/CPH1917_Q/CPH1917EX_11_OTA_2280_all_uMEvuaVFvSQe.ozip
+  ROM_NAME: ColorOS
+  ZIP_NAME: ColorOS-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: gof
   MIR_NAME2: wet
@@ -33,7 +33,7 @@ jobs:
             sudo -E apt-get -qq install simg2img
        
        - name: processing ErfanGSIs code 
-         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/123ridhin/ErfanGSIs.git
        
        - name: Setting up requirements and permissions
          run: |
