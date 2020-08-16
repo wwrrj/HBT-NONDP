@@ -33,7 +33,7 @@ jobs:
             sudo -E apt-get -qq install simg2img
        
        - name: processing ErfanGSIs code 
-         run: git clone --recurse-submodules https://github.com/123ridhin/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs.git
        
        - name: Setting up requirements and permissions
          run: |
