@@ -53,19 +53,24 @@ jobs:
        - name: uploading to MIR1 and MIR2 Aonly.zip 
          run: |    
               curl -sL https://git.io/file-transfer | sh
-              ./transfer $MIR_NAME1 ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z && ./transfer $MIR_NAME2 ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z
+              ./transfer $MIR_NAME1 ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z 
+       - name: uploading to MIR2
+         run: ./transfer $MIR_NAME2 ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z
                      
        - name: Zipping AB
          run: |
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               
-       - name: uploading to MIR1 and MIR2 AB.zip
+       - name: uploading to MIR1
          run: |
-              ./transfer $MIR_NAME ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z && ./transfer $MIR_NAM2 ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z     
+              ./transfer $MIR_NAME1 ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z
+       - name: Uploading to MIR2
+         run: ./transfer $MIR_NAME2 ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z  
+                 
               
        - name: Upload Build Informations and Baked:)
          run: |
-              ./transfer $MIR_NAME ErfanGSIs/output/*-Aonly-*.txt
+              ./transfer $MIR_NAME2 ErfanGSIs/output/*-Aonly-*.txt
          
 
                                                   
