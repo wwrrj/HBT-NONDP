@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://rom.download.nubia.com/Europe/NX659J/V409/NX659J-update.zip
-  ROM_NAME: Nubia
-  ZIP_NAME: Nubia-Helios
+  ROM_URL: https://bigota.d.miui.com/V11.0.2.0.QCNMIXM/miui_OLIVEGlobal_V11.0.2.0.QCNMIXM_1cfce9e7c8_10.0.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: gof
   MIR_NAME2: wet
