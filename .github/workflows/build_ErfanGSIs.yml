@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/c796394d33a560ce343bca50bb69ff6c1abb4ac8.zip
-  ROM_NAME: VOS
-  ZIP_NAME: VOS-Helios
+  ROM_URL: https://netcologne.dl.sourceforge.net/project/helios-gsis/VOS/Vivo_X21_PD1728F_EX_A_1.6.18_14042018_QFIL.zip
+  ROM_NAME: Funtouch 
+  ZIP_NAME: Funtouch-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: gof
   MIR_NAME2: wet
