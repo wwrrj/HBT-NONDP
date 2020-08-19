@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/CPH2113PU_11_OTA_0150_all_5spOwcYghdzd.ozip
-  ROM_NAME: ColorOS
-  ZIP_NAME: ColorOS-Helios
+  ROM_URL: http://tdrive.manofuranium.workers.dev/UL-ASUS_I01WD-ASUS-17.1810.2008.171-1.1.1-user.zip
+  ROM_NAME: ZenUI
+  ZIP_NAME: ZenUI-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: gof
   MIR_NAME2: wet
