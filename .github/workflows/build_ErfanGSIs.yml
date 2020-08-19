@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/update.zip
-  ROM_NAME: Flyme 
-  ZIP_NAME: FlymeOS-Helios
+  ROM_URL: http://tdrive.manofuranium.workers.dev/CPH2113PU_11_OTA_0150_all_5spOwcYghdzd.ozip
+  ROM_NAME: ColorOS
+  ZIP_NAME: ColorOS-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: gof
   MIR_NAME2: wet
