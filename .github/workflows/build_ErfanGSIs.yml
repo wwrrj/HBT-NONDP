@@ -9,7 +9,7 @@ on:
     
 env:
   ROM_URL: http://asia-sysupwsdl.vivoglobal.com/upgrade/official/officialFiles/PD2005F_EX_A_1.9.5-update-full_1594970123.zip
-  ROM_NAME: Generic:Funtouch
+  ROM_NAME: Funtouch
   ZIP_NAME: Funtouch-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: gof
@@ -33,7 +33,7 @@ jobs:
             sudo -E apt-get -qq install simg2img
        
        - name: processing ErfanGSIs code 
-         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/123ridhin/ErfanGSIs.git
        
        - name: Setting up requirements and permissions
          run: |
