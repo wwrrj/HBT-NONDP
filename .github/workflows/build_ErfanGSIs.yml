@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/meizu17_Pro/8.1.2.3/cn/20200817155932/eef1ef0c/update.zip
-  ROM_NAME: Flyme
-  ZIP_NAME: Flyme-Helios
+  ROM_URL: https://bigota.d.miui.com/V11.0.2.0.QCNMIXM/miui_OLIVEGlobal_V11.0.2.0.QCNMIXM_1cfce9e7c8_10.0.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: gof
   MIR_NAME2: wet
