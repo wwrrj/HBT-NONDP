@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://bigota.d.miui.com/V11.0.2.0.QCNMIXM/miui_OLIVEGlobal_V11.0.2.0.QCNMIXM_1cfce9e7c8_10.0.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI-Helios
+  ROM_URL: https://assorted.downloads.oppo.com/firmware/CPH1941/CPH1941EUEX_11_OTA_0520_all_OGFCHvxNWCnB.ozip
+  ROM_NAME: ColorOS
+  ZIP_NAME: ColorOS-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: gof
   MIR_NAME2: wet
