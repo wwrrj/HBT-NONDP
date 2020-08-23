@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://assorted.downloads.oppo.com/firmware/CPH1901/CPH1901EX_11_OTA_0080_all_I3uKifvGzS9c.ozip
-  ROM_NAME: ColorOS
-  ZIP_NAME: ColorOS-Helios
+  ROM_URL: https://bigota.d.miui.com/20.6.3/miui_MI6X_20.6.3_7b1ea8095b_9.0.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: gof
   MIR_NAME2: wet
