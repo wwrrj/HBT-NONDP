@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://bigota.d.miui.com/20.6.3/miui_MI6X_20.6.3_7b1ea8095b_9.0.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI-Helios
+  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZB631KL/UL-ASUS_X01BD-WW-16.2017.2007.094-user.zip
+  ROM_NAME: Generic:Zenfone
+  ZIP_NAME: Zenfone-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: gof
   MIR_NAME2: wet
@@ -53,7 +53,8 @@ jobs:
        - name: uploading to MIR1 and MIR2 Aonly.zip 
          run: |    
               curl -sL https://git.io/file-transfer | sh
-              ./transfer $MIR_NAME1 ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z 
+              ./transfer $MIR_NAME1 ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z
+               
        - name: uploading to MIR2
          run: ./transfer $MIR_NAME2 ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z
                      
