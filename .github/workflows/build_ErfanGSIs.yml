@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZB631KL/UL-ASUS_X01BD-WW-16.2017.2007.094-user.zip
-  ROM_NAME: Generic:Zenfone
-  ZIP_NAME: Zenfone-Helios
+  ROM_URL: http://tdrive.manofuranium.workers.dev/RMX2051_11_OTA_0150_all_H1GYpqzWpd5u.ozip
+  ROM_NAME: ColorOS:RealmeUI
+  ZIP_NAME: RealmeUI-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: gof
   MIR_NAME2: wet
