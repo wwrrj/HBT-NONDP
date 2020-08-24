@@ -8,12 +8,12 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/RMX2051_11_OTA_0150_all_H1GYpqzWpd5u.ozip
-  ROM_NAME: ColorOS:RealmeUI
-  ZIP_NAME: RealmeUI-Helios
+  ROM_URL: https://bigota.d.miui.com/V12.0.1.0.QJIEUXM/miui_MONETEEAGlobal_V12.0.1.0.QJIEUXM_da05579edc_10.0.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: gof
-  MIR_NAME2: wet
+  MIR_NAME2: wss
 
 jobs:
   build:
