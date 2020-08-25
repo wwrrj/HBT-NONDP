@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://sourceforge.net/projects/miroom/files/20.6.18/RedmiNote5_MIUI_20.6.18_MiRoom_9.0.zip/download  
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI-Helios
+  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/16/7.1.4.3/cn/20190228101130/d2f26d1f/update.zip 
+  ROM_NAME: Flyme
+  ZIP_NAME: Flyme-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
