@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/16/7.1.4.3/cn/20190228101130/d2f26d1f/update.zip 
-  ROM_NAME: Flyme
-  ZIP_NAME: Flyme-Helios
+  ROM_URL: https://bigota.d.miui.com/V12.0.1.0.QJIEUXM/miui_MONETEEAGlobal_V12.0.1.0.QJIEUXM_da05579edc_10.0.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
