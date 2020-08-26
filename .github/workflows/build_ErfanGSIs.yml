@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/16T/8.20.8.24/cn_daily/20200824003520/7d25c02e/update.zip
-  ROM_NAME: Flyme
-  ZIP_NAME: Flyme-Helios
+  ROM_URL: http://rom.download.nubia.com/Europe/NX629J/NX629J_Z69_EN_WPJ0O_V210.zip
+  ROM_NAME: Nubia:RedMagic
+  ZIP_NAME: RedMagic-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
