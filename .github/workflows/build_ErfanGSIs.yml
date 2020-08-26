@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://rom.download.nubia.com/Europe/NX629J/NX629J_Z69_EN_WPJ0O_V210.zip
-  ROM_NAME: Nubia:RedMagic
-  ZIP_NAME: RedMagic-Helios
+  ROM_URL: https://oxygenos.oneplus.net/OnePlus6Oxygen_22_OTA_047_all_2007191515_bd6f7476887846cb.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: OxygenOS-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
