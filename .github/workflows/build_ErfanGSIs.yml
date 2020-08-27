@@ -10,7 +10,7 @@ on:
 env:
   ROM_URL: https://oxygenos.oneplus.net/OnePlus6Oxygen_22_OTA_047_all_2007191515_bd6f7476887846cb.zip
   ROM_NAME: OxygenOS
-  ZIP_NAME: OxygenOS-Helios
+  ZIP_NAME: OxygenOSND-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
