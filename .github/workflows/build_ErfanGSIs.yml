@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://oxygenos.oneplus.net/OnePlus6Oxygen_22_OTA_047_all_2007191515_bd6f7476887846cb.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: OxygenOSND-Helios
+  ROM_URL: https://dllb2.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1OTgzNzYyODMiLCJ1IjpudWxsLCJsdCI6ImRvd25sb2FkIiwicyI6IjkxMjBiNjdmNjVmMGM0OTBmMmU5MjllMjc2MWM2YjM3MDZlZmZhZjg4NjM4YWJkMTdkMDJhNDIwMzA3M2Y5N2Y2NTViNGI4MDBkOWMzOTU3NTMzZDc2OWFmMDk5MmEyOWM3YmE5NTU2MjlkNmRjYTQzZGVmMGNkY2M1MWNlNzhlIiwidCI6MTU5ODU0MjY0Niwic3RmcCI6IjUxMmRlNTQzM2IxMWFjMmZjYzAxZmM2OWEyOTZmMmJmIiwic3RpcCI6IjE4OC43MS4yMzcuNjcifQ.foeJzmkm2FQt6464SYj80YfhxHyrl1iRrTtlx3f0YdI/ZenUI%206%20-%20August%20Update%20Port%20(Fixed).zip
+  ROM_NAME: ZenUI
+  ZIP_NAME: ZenUI-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
