@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/L79031_ROW_SECURE_USER_Q00114.1a_Q_ROW_12.0.091_ST_200719_qpst.zip
-  ROM_NAME: ZUI
-  ZIP_NAME: ZUI-Helios
+  ROM_URL: https://oxygenos.oneplus.net/OnePlus5TOxygen_43_OTA_054_all_2002242025_81ae0ff9d1c34a3f.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: OxygenOS-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
