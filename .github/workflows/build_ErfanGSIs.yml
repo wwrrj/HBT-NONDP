@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://gcamuniversedl.ironrescue.workers.dev/ROG%20EDITION%2020.8.25%20by%20Lucifer.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI-Helios
+  ROM_URL: https://download.zteusa.com/products/axon-10-pro/ZTE_Axon10Pro_V2.0.0B06_SD.zip
+  ROM_NAME: Generic:ZTE
+  ZIP_NAME: ZTE-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
