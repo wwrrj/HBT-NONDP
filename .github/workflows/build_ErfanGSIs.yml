@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://download.zteusa.com/products/axon-10-pro/ZTE_Axon10Pro_V2.0.0B06_SD.zip
-  ROM_NAME: Generic:ZTE
-  ZIP_NAME: ZTE-Helios
+  ROM_URL: https://mirrors.lolinet.com/firmware/lenovo/l79031/L79031_CN_SECURE_USER_Q00029.1_Q_ZUI_12.0.237_ST_200808_qpst.zip
+  ROM_NAME: ZUI
+  ZIP_NAME: ZUI-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
