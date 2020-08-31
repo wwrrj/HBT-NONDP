@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://mirrors.lolinet.com/firmware/lenovo/l79031/L79031_CN_SECURE_USER_Q00029.1_Q_ZUI_12.0.237_ST_200808_qpst.zip
-  ROM_NAME: ZUI
-  ZIP_NAME: ZUI-Helios
+  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS630KL/UL-ASUS_I01WD-ASUS-17.1810.2008.171-1.1.1-user.zip
+  ROM_NAME: ZenUI
+  ZIP_NAME: ZenUI-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
