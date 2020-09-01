@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://assorted.downloads.oppo.com/firmware/FindX/CPH1871EX_11_OTA_0130_all_ulGyo6pgKmXa.ozip
-  ROM_NAME: Generic:OppO
-  ZIP_NAME: OppO-Helios
+  ROM_URL: https://assorted.downloads.oppo.com/firmware/CPH1917/CPH1917EX_11_OTA_0060_all_9kzSsdQdH9fw.ozip
+  ROM_NAME: ColorOS:Reno
+  ZIP_NAME: Reno-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
