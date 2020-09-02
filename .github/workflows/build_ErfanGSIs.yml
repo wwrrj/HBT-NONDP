@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://dl.google.com/developers/android/rvc/images/gsi/gsi_gms_arm64-exp-RPB3.200720.005-6705141-60b63c6a.zip
-  ROM_NAME: Generic:AOSP
-  ZIP_NAME: AOSP-Helios
+  ROM_URL: https://tdrive.manofuranium.workers.dev/miui_PHOENIXININGlobal_V12.0.1.0.QGHINXM_639a982c45_10.0.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
