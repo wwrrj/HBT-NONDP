@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS660KL/UL-ASUS_I001_1-ASUS-16.0631.1910.64-1.1.253-user.zip
-  ROM_NAME: ZenUI:RoG
-  ZIP_NAME: RoG-Helios
+  ROM_URL: https://dl.google.com/developers/android/rvc/images/gsi/gsi_gms_arm64-exp-RPB3.200720.005-6705141-60b63c6a.zip
+  ROM_NAME: Generic:AOSP
+  ZIP_NAME: AOSP-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
