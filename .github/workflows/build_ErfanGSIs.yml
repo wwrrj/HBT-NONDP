@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/MiNSE_lavender_2.5_10.0_0c684675d7.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI-Helios
+  ROM_URL: http://dl-res.flymeos.com/Firmware/Flyme/note9/7.2.2.0/intl/20190402182611/7612d99c/update.zip
+  ROM_NAME: Flyme
+  ZIP_NAME: Flyme-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
