@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://dl-res.flymeos.com/Firmware/Flyme/note9/7.2.2.0/intl/20190402182611/7612d99c/update.zip
-  ROM_NAME: Flyme
-  ZIP_NAME: Flyme-Helios
+  ROM_URL: https://bigota.d.miui.com/V12.0.1.0.PEMEUXM/miui_ANDROMEDAEEAGlobal_V12.0.1.0.PEMEUXM_9e4961bf09_9.0.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
