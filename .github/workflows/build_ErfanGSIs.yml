@@ -8,7 +8,7 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://tdrive.manofuranium.workers.dev/update.zip
+  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/16s_Pro/7.3.4.2/cn/20191017191557/5362b1dc/update.zip
   ROM_NAME: Flyme
   ZIP_NAME: Flyme-Helios
   TZ: Middle-East/Kuwait
