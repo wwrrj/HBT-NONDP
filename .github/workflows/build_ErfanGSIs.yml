@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS670KS/UL-I002D-WW-29.12.18.12-user.zip
-  ROM_NAME: Generic:ZenUI
-  ZIP_NAME: ZenUI-Helios
+  ROM_URL: https://tdrive.manofuranium.workers.dev/Reloaded-11-UNOFFICIAL-20200916-beryllium.zip
+  ROM_NAME: MIUI:Reloaded
+  ZIP_NAME: MIUIReloaded-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
@@ -32,7 +32,7 @@ jobs:
             sudo -E apt-get -qq install simg2img
        
        - name: processing ErfanGSIs code 
-         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/issacabraham-git/ErfanGSIs.git
        
        - name: Setting up requirements and permissions
          run: |
