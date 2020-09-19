@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://tdrive.manofuranium.workers.dev/Reloaded-11-UNOFFICIAL-20200916-beryllium.zip
-  ROM_NAME: Generic:MIUI
-  ZIP_NAME: MIUIReloaded-Helios
+  ROM_URL: https://tdrive.manofuranium.workers.dev/update.zip
+  ROM_NAME: Flyme
+  ZIP_NAME: Flyme-Helios
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
