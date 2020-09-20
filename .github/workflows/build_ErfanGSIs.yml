@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://master.dl.sourceforge.net/project/nusantaraproject/lavender/Nusantara_v1.1-lavender-MicroG-15092020-OFFICIAL-0932.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI-HELIOS
+  ROM_URL: https://netix.dl.sourceforge.net/project/project-awaken/v1.0/beryllium/awaken_beryllium-20200919-1159-gapps-11-1.0-OFFICIAL.zip
+  ROM_NAME: MIUI:ProjectAwakenOS
+  ZIP_NAME: PAOS-HELIOS
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
