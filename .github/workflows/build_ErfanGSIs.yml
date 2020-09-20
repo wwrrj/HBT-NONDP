@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/16s/8.20.9.8/cn_daily/20200908165217/850d3ffe/update.zip
-  ROM_NAME: Flyme
-  ZIP_NAME: Flyme-Helios
+  ROM_URL: https://master.dl.sourceforge.net/project/nusantaraproject/lavender/Nusantara_v1.1-lavender-MicroG-15092020-OFFICIAL-0932.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI-HELIOS
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
