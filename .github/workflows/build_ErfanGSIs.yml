@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://netix.dl.sourceforge.net/project/project-awaken/v1.0/beryllium/awaken_beryllium-20200919-1159-gapps-11-1.0-OFFICIAL.zip
-  ROM_NAME: MIUI:ProjectAwakenOS
-  ZIP_NAME: PAOS-HELIOS
+  ROM_URL: https://netix.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/20.9.17/xiaomi.eu_multi_HMK20MI9T_20.9.17_v12-10.zip
+  ROM_NAME: MIUI:Raphael
+  ZIP_NAME: MIUI-HELIOS
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
 
