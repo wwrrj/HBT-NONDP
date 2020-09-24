@@ -12,7 +12,7 @@ env:
   ROM_NAME: Generic:POSP
   ZIP_NAME: POSP-HELIOS
   TZ: Middle-East/Kuwait
-  MIR_NAME1: lzs
+  MIR_NAME1: gof
 
 jobs:
   build:
