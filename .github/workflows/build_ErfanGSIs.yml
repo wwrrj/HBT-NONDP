@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://phoenixnap.dl.sourceforge.net/project/randomroms-testing-dontflash/potato_whyred-11-20200922-d.v4.0.0-staging%2B1.Community.zip
-  ROM_NAME: Generic:POSP
-  ZIP_NAME: POSP-HELIOS
+  ROM_URL: https://download.meizu.com/Firmware/Flyme/16xs/8.20.9.22/cn_daily/20200922023535/3a8d08b2/update.zip
+  ROM_NAME: Flyme
+  ZIP_NAME: Flyme-HELIOS
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
   
