@@ -8,7 +8,7 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://sourceforge.net/projects/randomroms-testing-dontflash/files/potato_whyred-11-20200922-d.v4.0.0-staging%2B1.Community.zip/download
+  ROM_URL: https://phoenixnap.dl.sourceforge.net/project/randomroms-testing-dontflash/potato_whyred-11-20200922-d.v4.0.0-staging%2B1.Community.zip
   ROM_NAME: Generic:POSP
   ZIP_NAME: POSP-HELIOS
   TZ: Middle-East/Kuwait
