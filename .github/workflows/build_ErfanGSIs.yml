@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/16xs/8.20.9.22/cn_daily/20200922023535/3a8d08b2/update.zip
-  ROM_NAME: Flyme
-  ZIP_NAME: Flyme-HELIOS
+  ROM_URL: https://master.dl.sourceforge.net/project/realme1/AncientOS/AncientOS-weeaboify-v4.0-Final-CPH1859-desufied-20200923-1049-GApps.zip
+  ROM_NAME: Generic:AncientOS
+  ZIP_NAME: AncientOS-HELIOS
   TZ: Middle-East/Kuwait
   MIR_NAME1: wet
   
