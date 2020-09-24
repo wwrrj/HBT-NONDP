@@ -11,7 +11,6 @@ env:
   ROM_URL: https://phoenixnap.dl.sourceforge.net/project/randomroms-testing-dontflash/potato_whyred-11-20200922-d.v4.0.0-staging%2B1.Community.zip
   ROM_NAME: Generic:POSP
   ZIP_NAME: POSP-HELIOS
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   TZ: Middle-East/Kuwait
   MIR_NAME1: gof
   SFDIRA: cd /home/pfs/project/helios-gsis/OxygenOS
@@ -52,18 +51,11 @@ jobs:
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img
          
        - name: Uploading to SFG
-         run: spawn sftp ridhin@frs.sourceforge.net
+         run: scp $ZIP_NAME-GSI-Aonly.7z ridhin@frs.sourceforge.net:/home/frs/project/helios-gsis/OxygenOS             
               expect \"yes/no\"
               send \"yes\r\"
               expect \"Password\"
-              send \"${{ secrets.PASSWORD }}\r\"
-              expect \"sftp> \"
-              send \"$SFDIRA\r\"
-              set timeout -1
-              send \"put $ZIP_NAME-GSI-Aonly.7z\r\"
-              expect \"Uploading\"
-              expect \"100%\"
-              expect \"sftp>\"  
+              send \"${{ secrets.PASSWORD }}\r\" 
              
        - name: uploading to MIR1 and MIR2 Aonly.zip 
          run: |    
