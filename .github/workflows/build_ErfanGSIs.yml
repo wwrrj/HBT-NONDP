@@ -63,8 +63,7 @@ jobs:
               send \"put $ZIP_NAME-GSI-Aonly.7z\r\"
               expect \"Uploading\"
               expect \"100%\"
-              expect \"sftp>\"
-              interact"  
+              expect \"sftp>\"  
              
        - name: uploading to MIR1 and MIR2 Aonly.zip 
          run: |    
