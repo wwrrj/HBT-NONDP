@@ -12,7 +12,7 @@ env:
   ROM_NAME: Generic:Nusantra
   ZIP_NAME: Nusantra-HELIOS
   TZ: Middle-East/Kuwait
-  MIR_NAME1: wet
+  MIR_NAME1: gof
 
 jobs:
   build:
