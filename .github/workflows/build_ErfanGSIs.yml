@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://sourceforge.net/projects/nusantaraproject/files/onclite/Nusantara_v1.1-onclite-12092020-OFFICIAL-2338.zip/download
-  ROM_NAME: Generic:Nusantra
-  ZIP_NAME: Nusantra-HELIOS
+  ROM_URL: https://sourceforge.net/projects/randomroms-testing-dontflash/files/potato_whyred-11-20200922-d.v4.0.0-staging%2B1.Community.zip/download
+  ROM_NAME: Generic:POSP
+  ZIP_NAME: POSP-HELIOS
   TZ: Middle-East/Kuwait
   MIR_NAME1: tmp
 
