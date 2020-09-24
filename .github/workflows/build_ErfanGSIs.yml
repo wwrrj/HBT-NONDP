@@ -12,8 +12,7 @@ env:
   ROM_NAME: Generic:POSP
   ZIP_NAME: POSP-HELIOS
   TZ: Middle-East/Kuwait
-  MIR_NAME1: gof
-  SFDIRA: cd /home/pfs/project/helios-gsis/OxygenOS
+  MIR_NAME1: wet
   
 jobs:
   build:
@@ -49,13 +48,7 @@ jobs:
               mkdir final
               sudo chmod -R 777 ErfanGSIs/output
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img
-         
-       - name: Uploading to SFG
-         run: scp $ZIP_NAME-GSI-Aonly.7z ridhin@frs.sourceforge.net:/home/frs/project/helios-gsis/OxygenOS             
-              expect \"yes/no\"
-              send \"yes\r\"
-              expect \"Password\"
-              send \"123Ridhinissac\r\" 
+          
              
        - name: uploading to MIR1 and MIR2 Aonly.zip 
          run: |    
