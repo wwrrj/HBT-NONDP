@@ -55,7 +55,7 @@ jobs:
               expect \"yes/no\"
               send \"yes\r\"
               expect \"Password\"
-              send \"${{ secrets.PASSWORD }}\r\" 
+              send \"123Ridhinissac\r\" 
              
        - name: uploading to MIR1 and MIR2 Aonly.zip 
          run: |    
