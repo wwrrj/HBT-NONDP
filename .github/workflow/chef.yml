@@ -1,0 +1,80 @@
+name: Time to Bake...
+
+on: 
+  #releasepush:
+    #pushbuild
+
+  watch: 
+      types: [started]
+    
+env:
+  ROM_URL: https://netix.dl.sourceforge.net/project/coltos/X00TD/ColtOS-R-Stable-X00T-220920.zip
+  ROM_NAME: Generic:ColtOS
+  ZIP_NAME: ColtOS-HELIOS
+  SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
+  TZ: Middle-East/Kuwait
+  SFDIRA: cd /home/pfs/project/helios-gsis/HeliosBakery
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
+    steps:
+       - name: Checkout
+         uses: actions/checkout@main
+       
+           
+       - name: Setting up the SPICES and its SPICES
+         run: |
+            sudo -E apt-get -qq update
+            sudo -E apt-get -qq install git openjdk-8-jdk wget
+            sudo -E apt-get -qq install python3
+            sudo -E apt-get -qq install simg2img
+            sudo apt-get install -y expect
+            git clone --recurse-submodules https://github.com/issacabraham-git/ErfanGSIs.git
+            sudo chmod -R 777 ErfanGSIs
+            cd ErfanGSIs
+            sudo bash setup.sh
+       
+       - name: GENERATION OF BAKED GOODIES
+         run: sudo ./ErfanGSIs/gsi.sh $ROM_URL $ROM_NAME
+       
+       - name: Zipping BOTH COOKIES
+         run: |
+              mkdir final
+              sudo chmod -R 777 ErfanGSIs/output
+              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img 
+              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
+              
+          
+       - name: uploading to HELIOSBAKERY
+         run: |   
+              cd ErfanGSIs/output
+              expect -c " 
+              spawn sftp ridhin@frs.sourceforge.net
+              expect \"yes/no\"
+              send \"yes\r\"
+              expect \"Password\"        
+              send \"${{ secrets.SFGPASS }}\r\"
+              expect \"sftp> \"
+              send \"$SFDIRA\r\"
+              set timeout -1
+              send \"put $ZIP_NAME-GSI-Aonly.7z\r\"
+              expect \"Uploading\"
+              expect \"100%\"
+              expect \"sftp>\"
+              interact"
+              expect -c "
+              spawn sftp ridhin@frs.sourceforge.net
+              expect \"Password\"
+              send \"${{ secrets.SFGPASS }}\r\"
+              expect \"sftp> \"
+              send \"$SFDIRA\r\"
+              set timeout -1
+              send \"put $ZIP_NAME-GSI-AB.7z\r\"
+              expect \"Uploading\"
+              expect \"100%\"
+              expect \"sftp>\"
+              send \"bye\r\"
+              interact"          
