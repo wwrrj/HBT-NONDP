@@ -9,8 +9,8 @@ on:
     
 env:
   ROM_URL: https://netix.dl.sourceforge.net/project/havoc-os/X00T/Havoc-OS-v3.9-20200916-X00T-Official.zip
-  ROM_NAME: Generic:Havoc
-  ZIP_NAME: Havoc-HELIOS
+  ROM_NAME: MIUI:MiRoom
+  ZIP_NAME: MiRoom-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
