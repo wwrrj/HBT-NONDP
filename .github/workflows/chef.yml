@@ -14,7 +14,7 @@ env:
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
-  SFDIRA2: cd /home/pfs/project/helios-gsis/HeliosBakerybills
+  SFDIRA2: cd /home/pfs/project/helios-gsis/Heliosbakerybills
   
 jobs:
   build:
@@ -78,7 +78,6 @@ jobs:
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
-              send \"bye\r\"
               interact"
               expect -c "
               spawn sftp ridhin@frs.sourceforge.net
