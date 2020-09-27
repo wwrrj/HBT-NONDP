@@ -8,7 +8,7 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://netix.dl.sourceforge.net/project/havoc-os/X00T/Havoc-OS-v3.9-20200916-X00T-Official.zip
+  ROM_URL: https://netix.dl.sourceforge.net/project/miroom/stable/V12.0/Mi9TPro-RedmiK20Pro_MIUI_V12.0.2.0.QFKCNXM_MiRoom_10.0.zip
   ROM_NAME: MIUI:MiRoom
   ZIP_NAME: MiRoom-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
