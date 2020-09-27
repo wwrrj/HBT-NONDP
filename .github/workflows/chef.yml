@@ -14,7 +14,7 @@ env:
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
-  SFDIRA2: cd /home/pfs/project/helios-gsis/HeliosBakerybills
+  MIRWET: wet
   
 jobs:
   build:
@@ -50,6 +50,11 @@ jobs:
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img 
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               
+       - name: Uploading the bill to server
+         run: | 
+             curl -sL https://git.io/file-transfer | sh
+             ./transfer $MIRWET ErfanGSIs/out/*-Aonly-*.txt 
+       
           
        - name: uploading to HELIOSBAKERY
          run: |   
@@ -76,18 +81,6 @@ jobs:
               send \"$SFDIRA1\r\"
               set timeout -1
               send \"put $ZIP_NAME-GSI-AB.7z\r\"
-              expect \"Uploading\"
-              expect \"100%\"
-              expect \"sftp>\"
-              interact"
-              expect -c "
-              spawn sftp ridhin@frs.sourceforge.net
-              expect \"Password\"
-              send \"${{ secrets.SFGPASS }}\r\"
-              expect \"sftp> \"
-              send \"$SFDIRA2\r\"
-              set timeout -1
-              send \"put $ZIP_NAME-GSI-Aonly.txt\r\"
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
