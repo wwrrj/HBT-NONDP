@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://dl.google.com/dl/android/aosp/taimen-rp1a.200720.009-factory-f2d162ef.zip
-  ROM_NAME: Pixel
-  ZIP_NAME: Pixel-HELIOS
+  ROM_URL: https://netix.dl.sourceforge.net/project/havoc-os/X00T/Havoc-OS-v3.9-20200916-X00T-Official.zip
+  ROM_NAME: Generic:Havoc
+  ZIP_NAME: Havoc-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
@@ -39,7 +39,9 @@ jobs:
             sudo bash setup.sh
        
        - name: GENERATION OF BAKED GOODIES
-         run: sudo ./ErfanGSIs/gsi.sh $ROM_URL $ROM_NAME
+         run: 
+            |
+            cd ErfanGSIs && sudo ./gsi.sh $ROM_URL $ROM_NAME
        
        - name: Zipping BOTH COOKIES
          run: |
