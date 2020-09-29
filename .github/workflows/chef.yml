@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://m.mark41stark.workers.dev//MIPhone-OS_1.0_HM4X_12-10.zip
-  ROM_NAME: MIUI:MiPhoneOS
-  ZIP_NAME: MiPhoneOS-HELIOS
+  ROM_URL: https://dl3.smartisan.com/ota/rls.delta-ard10-mol-7.5.0-20200810-SEKSA.delta-user/202009201446/7.5.0.1-202009201220-user-dlt-1293671435.zip
+  ROM_NAME: SmartisanOS
+  ZIP_NAME: SmartisanOS-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
