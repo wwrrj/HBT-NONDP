@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://netix.dl.sourceforge.net/project/project-awaken/v1.1/beryllium/awaken_beryllium-20200924-1208-11-1.1-OFFICIAL.zip
-  ROM_NAME: Generic:ProjectAwaken
-  ZIP_NAME: ProjectAwaken-HELIOS
+  ROM_URL: https://m.mark41stark.workers.dev//MIPhone-OS_1.0_HM4X_12-10.zip
+  ROM_NAME: MIUI:MiPhoneOS
+  ZIP_NAME: MiPhoneOS-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
