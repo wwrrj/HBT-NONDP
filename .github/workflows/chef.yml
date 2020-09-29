@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://tdrive.elytra8.workers.dev/MIUIPLUS_LAVENDER.20.9.24.A10.M12.zip
-  ROM_NAME: MIUI:MIUIPLUS
-  ZIP_NAME: MIUIPLUS-HELIOS
+  ROM_URL: https://netix.dl.sourceforge.net/project/project-awaken/v1.1/beryllium/awaken_beryllium-20200924-1208-11-1.1-OFFICIAL.zip
+  ROM_NAME: Generic:ProjectAwaken
+  ZIP_NAME: ProjectAwaken-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
