@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://download.h2os.com/OnePlus7/MP/OnePlus7Hydrogen_14.H.29_OTA_029_all_2009152119_55f5566b0019459d.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: HydrogenOS-01-10-2020-HELIOS
+  ROM_URL: http://tdrive.elytra8.workers.dev/3.1.3_20200819-1018-zangyapro_bq-user-528-Fastboot-FW.zip
+  ROM_NAME: Generic:AndroidOne
+  ZIP_NAME: Aquaris-AndroidOne-01-10-2020-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
