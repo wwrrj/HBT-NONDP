@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://dl-res.flymeos.com/Firmware/Flyme/16xs/7.3.1.0/intl/20190727193914/748b6cff/update.zip
-  ROM_NAME: Flyme
-  ZIP_NAME: FlymeREQ-01-10-2020-HELIOS
+  ROM_URL: http://download.h2os.com/OnePlus5/MP/OnePlus5Hydrogen_23_OTA_064_all_2009080046_205cdc824209489c.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: OxygenOS-01-10-2020-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
