@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://download.h2os.com/OnePlus5/MP/OnePlus5Hydrogen_23_OTA_064_all_2009080046_205cdc824209489c.zip
+  ROM_URL: https://download.h2os.com/OnePlus7/MP/OnePlus7Hydrogen_14.H.29_OTA_029_all_2009152119_55f5566b0019459d.zip
   ROM_NAME: OxygenOS
-  ZIP_NAME: OxygenOS-01-10-2020-HELIOS
+  ZIP_NAME: HydrogenOS-01-10-2020-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
