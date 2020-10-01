@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://tdrive.elytra8.workers.dev/3.1.3_20200819-1018-zangyapro_bq-user-528-Fastboot-FW.zip
+  ROM_URL: https://ota-cache1.googlezip.net/packages/data/ota-api/lge_phoenixsprout_phoenixlaocom/89819b8c83348ee0e50ca4cafd32b0f3607b9e74.zip?always_serve=yes&baany=all&ipbypass=yes&mm=49&ms=aya
   ROM_NAME: Generic:AndroidOne
-  ZIP_NAME: Aquaris-AndroidOne-01-10-2020-HELIOS
+  ZIP_NAME: Lg-AndroidOne-01-10-2020-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
