@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/16T/8.20.9.22/cn_daily/20200922021506/6f09d9b3/update.zip
-  ROM_NAME: Flyme:Flyme16T
-  ZIP_NAME: Flyme16T-HELIOS
+  ROM_URL: https://netix.dl.sourceforge.net/project/helios-gsis/DebugBuildsDontDownload/OnePlus7Oxygen_14.P.29_OTA_029_all_2009152124_ba2424a.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: OxygenOS-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
