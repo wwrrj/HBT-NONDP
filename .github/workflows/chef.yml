@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://netix.dl.sourceforge.net/project/octavi-os/Whyred/OctaviOS-v1.0-whyred-20201002-OFFICIAL.zip
-  ROM_NAME: Generic:OctaviOS
-  ZIP_NAME: OctaviOS-02-10-2020-HELIOS
+  ROM_URL: https://tdrive.elytra8.workers.dev/pine_global_images_V11.0.3.0.QCMMIXM_20200717.0000.00_10.0_global_bdc1e4239f.tgz
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUIPine-02-10-2020-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
