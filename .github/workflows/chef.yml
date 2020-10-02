@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://ota-cache1.googlezip.net/packages/data/ota-api/lge_phoenixsprout_phoenixlaocom/89819b8c83348ee0e50ca4cafd32b0f3607b9e74.zip?always_serve=yes&baany=all&ipbypass=yes&mm=49&ms=aya
-  ROM_NAME: Generic:AndroidOne
-  ZIP_NAME: Lg-AndroidOne-01-10-2020-HELIOS
+  ROM_URL: https://downloads.sourceforge.net/project/nusantaraproject/whyred/Nusantara_v1.1-whyred-12092020-OFFICIAL-1317.zip?r=android-app%3A%2F%2Forg.telegram.plus%2F&ts=1601623577&use_mirror=jztkft
+  ROM_NAME: Generic:Nusantaraproject
+  ZIP_NAME: Nusantaraproject-02-10-2020-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
