@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://tdrive.elytra8.workers.dev/20200219170609470.zip
-  ROM_NAME: Generic:ZTE
-  ZIP_NAME: ZTE-03-10-2020-HELIOS
+  ROM_URL: http://dl-res.flymeos.com/Firmware/Flyme/note9/7.2.2.0/intl/20190402182611/7612d99c/update.zip
+  ROM_NAME: Flyme
+  ZIP_NAME: Flyme-03-10-2020-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
