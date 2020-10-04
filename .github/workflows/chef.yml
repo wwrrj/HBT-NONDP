@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://netix.dl.sourceforge.net/project/project-fluid/whyred/eleven/gappless/Fluid-1.0-Rum-OFFICIAL-whyred-20201001.zip
-  ROM_NAME: Generic:FluidOS
-  ZIP_NAME: FluidOS-04-10-2020-HELIOS
+  ROM_URL: https://tdrive.elytra8.workers.dev/OnePlus7Oxygen_14.P.29_OTA_029_all_2009152124_ba2424a.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: OOSOP7-04-10-2020-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
   TZ: Middle-East/Kuwait
