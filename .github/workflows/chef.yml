@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://tdrive.elytra8.workers.dev/OnePlus7Oxygen_14.P.29_OTA_029_all_2009152124_ba2424a.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: OOSOP7-04-10-2020-HELIOS
+  ROM_URL: http://tdrive.elytra8.workers.dev/Copy%20of%20AbhiX_ROG_Edition_Lavender_20.9.24.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI-ROGEdition-04-10-2020-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
   TZ: Middle-East/Kuwait
