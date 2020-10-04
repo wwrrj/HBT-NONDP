@@ -12,6 +12,7 @@ env:
   ROM_NAME: Generic:FluidOS
   ZIP_NAME: FluidOS-04-10-2020-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
+  SECRETS_GITPASS: ${{ secrets.GIT }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
   SFDIRA2: cd /home/pfs/project/helios-gsis/Heliosbakerybills
@@ -33,7 +34,7 @@ jobs:
             sudo -E apt-get -qq install python3
             sudo -E apt-get -qq install simg2img
             sudo apt-get install -y expect
-            git clone --recurse-submodules https://github.com/issacabraham-git/ErfanGSIs.git
+            git clone --recurse-submodules ${{ secrets.GIT }}
             sudo chmod -R 777 ErfanGSIs
             cd ErfanGSIs
             sudo bash setup.sh
