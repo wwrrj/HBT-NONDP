@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://download.h2os.com/OnePlus7/MP/OnePlus7Hydrogen_14.H.29_OTA_029_all_2009152119_55f5566b0019459d.zip
-  ROM_NAME: OxygenOS:HydrogenOS
-  ZIP_NAME: H20S-05-10-2020-HELIOS
+  ROM_URL: http://bigota.d.miui.com/9.1.24/miui_HM5Global_9.1.24_f85c800b36_8.1.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI-05-10-2020-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
   TZ: Middle-East/Kuwait
