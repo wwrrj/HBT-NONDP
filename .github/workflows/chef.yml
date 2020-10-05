@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://dl.google.com/dl/android/aosp/walleye-rp1a.201005.004-factory-78b8d156.zip
-  ROM_NAME: Pixel
-  ZIP_NAME: Pixel2-05-10-2020-HELIOS
+  ROM_URL: https://pdrive.priyo.workers.dev/0://potato_land-11-20200926-d.v4.0.0-staging+1.Community.zip
+  ROM_NAME: Generic:Potato
+  ZIP_NAME: Potato-A11-05-10-2020-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
   TZ: Middle-East/Kuwait
