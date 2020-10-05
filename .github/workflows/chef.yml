@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: http://bigota.d.miui.com/9.1.24/miui_HM5Global_9.1.24_f85c800b36_8.1.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI-05-10-2020-HELIOS
+  ROM_URL: https://master.dl.sourceforge.net/project/cherish-os/device/violet/Cherish-OS-v2.0-Beta-20201004-1242-violet-Official.zip
+  ROM_NAME: Generic:CherishOS
+  ZIP_NAME: CherishOS-05-10-2020-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
   TZ: Middle-East/Kuwait
