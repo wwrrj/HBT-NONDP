@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:
-  ROM_URL: https://dl.google.com/dl/android/aosp/taimen-rp1a.201005.004-factory-f797c86c.zip
+  ROM_URL: https://dl.google.com/dl/android/aosp/walleye-rp1a.201005.004-factory-78b8d156.zip
   ROM_NAME: Pixel
-  ZIP_NAME: Pixel2XL-05-10-2020-HELIOS
+  ZIP_NAME: Pixel2-05-10-2020-HELIOS
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
   TZ: Middle-East/Kuwait
