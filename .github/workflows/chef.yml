@@ -43,7 +43,6 @@ jobs:
             set timeout -1
             catch wait result
             interact"
-            git clone --recurse-submodules https://github.com/issacabraham-git/HeliosBakerTools.git
             sudo chmod -R 777 ErfanGSIs
             cd ErfanGSIs
             sudo bash setup.sh
