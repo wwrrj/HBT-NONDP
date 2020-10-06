@@ -35,7 +35,7 @@ jobs:
             sudo -E apt-get -qq install simg2img
             sudo apt-get install -y expect
             expect -c " 
-            spawn git clone ${{ secrets.REPO }} source
+            spawn git clone ${{ secrets.REPO }}
             expect \"Username\"        
             send \"${{ secrets.GHUSER }}\r\"
             expect \"Password\"        
