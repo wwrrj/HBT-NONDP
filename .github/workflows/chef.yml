@@ -59,45 +59,5 @@ jobs:
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               
        - name: uploading to HELIOSBAKERY
-         run: |   
-              cd ErfanGSIs/output
-              expect -c " 
-              spawn sftp ridhin@frs.sourceforge.net
-              expect \"yes/no\"
-              send \"yes\r\"
-              expect \"Password\"        
-              send \"${{ secrets.SFGPASS }}\r\"
-              expect \"sftp> \"
-              send \"$SFDIRA2\r\"
-              set timeout -1
-              send \"put *-Aonly-*.txt\r\"
-              expect \"Uploading\"
-              expect \"100%\"
-              expect \"sftp>\"
-              interact"
-              expect -c "
-              spawn sftp ridhin@frs.sourceforge.net
-              expect \"Password\"
-              send \"${{ secrets.SFGPASS }}\r\"
-              expect \"sftp> \"
-              send \"$SFDIRA1\r\"
-              set timeout -1
-              send \"put $ZIP_NAME-GSI-Aonly.7z\r\"
-              expect \"Uploading\"
-              expect \"100%\"
-              expect \"sftp>\"
-              interact"
-              expect -c "
-              spawn sftp ridhin@frs.sourceforge.net
-              expect \"Password\"
-              send \"${{ secrets.SFGPASS }}\r\"
-              expect \"sftp> \"
-              send \"$SFDIRA1\r\"
-              set timeout -1
-              send \"put $ZIP_NAME-GSI-AB.7z\r\"
-              expect \"Uploading\"
-              expect \"100%\"
-              expect \"sftp>\"
-              send \"bye\r\"
-              interact"  
-                             
+         run: ${{ secrets.ULSFG }}  
+                  
