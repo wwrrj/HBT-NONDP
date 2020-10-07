@@ -39,21 +39,17 @@ jobs:
             sudo -E apt-get -qq install simg2img
             sudo apt-get install -y expect
             
-       - name: tools
-          run:| 
-              expect -c " 
-             spawn git clone $SECRETS_REPOS ErfanGSIs
-             expect \"Username\"        
-             send \"$SECRETS_USERG\r\"
-             expect \"Password\"        
-             send \"$SECRETS_USERP\r\"
-             set timeout -1
-             catch wait result
-             interact"
-             sudo chmod -R 777 ErfanGSIs
-             cd ErfanGSIs
-             sudo bash setup.sh
-            
+       - name: test setup 
+         run:  |
+           expect -c " 
+           spawn git clone ${{ secrets.REPOS }} ErfanGSIs
+           expect \"Username or email address\"        
+           send \"${{ secrets.USERG }}\r\"
+           expect \"Password\"        
+           send \"${{ secrets.USERP }}\r\"
+           set timeout -1
+           catch wait result
+           interact"
        
        - name: DOWNLOADING THE FIRMWARE
          run: cd ErfanGSIs && sudo wget $ROM_URL 
