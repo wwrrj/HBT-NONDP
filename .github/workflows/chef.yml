@@ -8,10 +8,10 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv12/xiaomi.eu_multi_HMK20ProMI9TPro_V12.0.4.0.QFKCNXM_v12-10.zip/download
+  ROM_URL: https://netix.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/20.9.24/xiaomi.eu_multi_HMNote7Pro_20.9.24_v12-10.zip
   ROM_NAME: MIUI
-  ROMZIP_NAME: xiaomi.eu_multi_HMK20ProMI9TPro_V12.0.4.0.QFKCNXM_v12-10.zip
-  ZIP_NAME: MIUITEST-HELIOS-06-10
+  ROMZIP_NAME: xiaomi.eu_multi_HMNote7Pro_20.9.24_v12-10.zip
+  ZIP_NAME: MIUI-HELIOS-07-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
   SECRETS_REPOS: ${{ secrets.REPOS }}
@@ -20,6 +20,7 @@ env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. RO
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
   SFDIRA2: cd /home/pfs/project/helios-gsis/Heliosbakerybills
+  SFUSER: ${{ secrets.SFUSER }}
   
 jobs:
   build:
@@ -71,7 +72,7 @@ jobs:
          run: |   
               cd ErfanGSIs/output
               expect -c " 
-              spawn sftp ridhin@frs.sourceforge.net
+              spawn sftp $SFUSER
               expect \"yes/no\"
               send \"yes\r\"
               expect \"Password\"        
@@ -85,7 +86,7 @@ jobs:
               expect \"sftp>\"
               interact"
               expect -c "
-              spawn sftp ridhin@frs.sourceforge.net
+              spawn sftp $SFUSER
               expect \"Password\"
               send \"${{ secrets.SFGPASS }}\r\"
               expect \"sftp> \"
@@ -97,7 +98,7 @@ jobs:
               expect \"sftp>\"
               interact"
               expect -c "
-              spawn sftp ridhin@frs.sourceforge.net
+              spawn sftp $SFUSER
               expect \"Password\"
               send \"${{ secrets.SFGPASS }}\r\"
               expect \"sftp> \"
