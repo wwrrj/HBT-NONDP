@@ -9,8 +9,8 @@ on:
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
   ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7TOxygen/OnePlus7TOxygen_14.O.19_GLO_019_2009281709/OnePlus7TOxygen_14.O.19_OTA_019_all_2009281709_1026.zip
-  ROMZIP_NAME: OnePlus7TOxygen_14.O.19_OTA_019_all_2009281709_1026.zip
   ROM_NAME: OxygenOS
+  ROMZIP_NAME: OnePlus7TOxygen_14.O.19_OTA_019_all_2009281709_1026.zip
   ZIP_NAME: OxygenOS-HELIOS-06-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
@@ -57,14 +57,9 @@ jobs:
        - name: GENERATION OF BAKED GOODIES
          run: 
             |
-            cd ErfanGSIs && sudo ./dyn.sh $ROM_NAME $ROMZIP_NAME && sudo umount system && sudo rm -rf system
+            cd ErfanGSIs && sudo ./gsi.sh $ROMZIP_NAME $ROM_NAME
             
-       - name: MOUNTING THE SYSTEM
-         run: cd ErfanGSIs/cache && sudo mkdir dynamic && sudo mount -o ro system.img dynamic 
-         
-       - name: MAKING THE COOKIES
-         run: cd ErfanGSIs && sudo ./gsi.sh cache/dynamic $ROM_NAME  
-       
+             
        - name: Zipping BOTH COOKIES
          run: |
               mkdir final
