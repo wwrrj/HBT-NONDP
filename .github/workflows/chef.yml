@@ -8,10 +8,10 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://tdrive.elytra8.workers.dev/LegionOS-v3.1-platina-20201007-OFFICIAL-Vanilla.zip
-  ROM_NAME: Generic:LegionOS
-  ROMZIP_NAME: LegionOS-v3.1-platina-20201007-OFFICIAL-Vanilla.zip
-  ZIP_NAME: legionoscrrq-HELIOS-07-10
+  ROM_URL: https://us-dl.mokeedev.com/firmware/TUsxMDAuMC1tMTkyMy0yMDIwMTAwNjA1MjYtTklHSFRMWS56aXB8ZmlybXdhcmV8MTYwMTk2NDgyOQ/MK100.0-m1923-202010060526-NIGHTLY.zip
+  ROM_NAME: Generic:MKUNKNOWN
+  ROMZIP_NAME: MK100.0-m1923-202010060526-NIGHTLY.zip
+  ZIP_NAME: MKUNKNOWNREQ-HELIOS-07-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
   SECRETS_REPOS: ${{ secrets.REPOS }}
