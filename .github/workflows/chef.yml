@@ -53,7 +53,7 @@ jobs:
            interact"
        
        - name: DOWNLOADING THE FIRMWARE
-         run: cd ErfanGSIs && sudo wget $ROM_URL 
+         run: cd ErfanGSIs && sudo bash setup.sh && sudo wget $ROM_URL 
        
        - name: GENERATION OF BAKED GOODIES
          run: 
