@@ -1,6 +1,6 @@
-𝙃𝙚𝙡𝙞𝙤𝙨𝘽𝙖𝙠𝙚𝙧 This Project should not be shared with *others*. those have given access can **Bake**
+                                𝙃𝙚𝙡𝙞𝙤𝙨𝘽𝙖𝙠𝙚𝙧 This Project should not be shared with *others*. those have given access can **Bake**
 
-INSTRUCTIONS ABOUT USING THIS TOOL:
+### INSTRUCTIONS ABOUT USING THIS TOOL: ###
 ### you should change the following env from the workflow : ###
  
 
@@ -26,10 +26,10 @@ SUPPORTED ROM LIST
 | 16.ZenUI                |
 | 17.ZUI                  |
                               <<   ALL THESE ANDROID 10 >>> 
-                              
-  
-1.Generic
-2.MIUI
-3.Pixel
+   SUPPORTED ROM LIST                            
+|  -------- |  
+| 1.Generic |
+| 2.MIUI    |
+| 3.Pixel   |
 
                             << THESE ARE ANDROID 11 >>
