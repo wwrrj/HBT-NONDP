@@ -40,19 +40,19 @@ jobs:
             sudo apt-get install -y expect
             
        - name: tools
-                |     
-            expect -c " 
-            spawn git clone $SECRETS_REPOS ErfanGSIs
-            expect \"Username\"        
-            send \"$SECRETS_USERG\r\"
-            expect \"Password\"        
-            send \"$SECRETS_USERP\r\"
-            set timeout -1
-            catch wait result
-            interact"
-            sudo chmod -R 777 ErfanGSIs
-            cd ErfanGSIs
-            sudo bash setup.sh
+          run:| 
+              expect -c " 
+             spawn git clone $SECRETS_REPOS ErfanGSIs
+             expect \"Username\"        
+             send \"$SECRETS_USERG\r\"
+             expect \"Password\"        
+             send \"$SECRETS_USERP\r\"
+             set timeout -1
+             catch wait result
+             interact"
+             sudo chmod -R 777 ErfanGSIs
+             cd ErfanGSIs
+             sudo bash setup.sh
             
        
        - name: DOWNLOADING THE FIRMWARE
