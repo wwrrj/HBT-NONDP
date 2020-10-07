@@ -5,14 +5,17 @@
  
 
 ### change ROM_URL,  ROM_NAME,  ZIP_NAME,  ROMZIP_NAME  respectivley. ROM_NAME is case sensitive  ### 
-
+ 
+  <<   ALL THESE ANDROID 10 >>> 
+ 
+ 
 SUPPORTED ROM LIST 
 | ----------------------- |
 | 1.ColorOS               |
 | 2.Flyme                 |
-| 3.Generic               |
+| 3.Generic               |                                                         
 | 4.JoyUI                 |
-| 5.MIUI                  |
+| 5.MIUI                  |                              
 | 6.Moto                  |
 | 7.Nubia                 |
 | 8.OneUI{Bad perfomance} |
@@ -25,7 +28,10 @@ SUPPORTED ROM LIST
 | 15.Xperia               |
 | 16.ZenUI                |
 | 17.ZUI                  |
-                              <<   ALL THESE ANDROID 10 >>> 
+                             
+                             
+  << THESE ARE ANDROID 11 >>      
+         
    SUPPORTED ROM LIST                            
 |  -------- |  
 | 1.Generic |
