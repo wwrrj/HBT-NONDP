@@ -8,10 +8,10 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7TOxygen/OnePlus7TOxygen_14.O.19_GLO_019_2009281709/OnePlus7TOxygen_14.O.19_OTA_019_all_2009281709_1026.zip
-  ROM_NAME: OxygenOS
-  ROMZIP_NAME: OnePlus7TOxygen_14.O.19_OTA_019_all_2009281709_1026.zip
-  ZIP_NAME: OxygenOS-HELIOS-06-10
+  ROM_URL: https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv12/xiaomi.eu_multi_HMK20ProMI9TPro_V12.0.4.0.QFKCNXM_v12-10.zip/download
+  ROM_NAME: MIUI
+  ROMZIP_NAME: xiaomi.eu_multi_HMK20ProMI9TPro_V12.0.4.0.QFKCNXM_v12-10.zip
+  ZIP_NAME: MIUITEST-HELIOS-06-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
   SECRETS_REPOS: ${{ secrets.REPOS }}
