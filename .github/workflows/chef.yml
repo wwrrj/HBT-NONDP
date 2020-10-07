@@ -7,12 +7,16 @@ on:
   watch: 
       types: [started]
     
-env:           #change ROM_URL,ROM_NAME,ZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://pdrive.priyo.workers.dev/0://xiaomi.eu_multi_HMK20ProMI9TPro_V12.0.4.0.QFKCNXM_v12-10.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI-EU-K20Pro-A10-05-10-2020-HELIOS
+env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
+  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7TOxygen/OnePlus7TOxygen_14.O.19_GLO_019_2009281709/OnePlus7TOxygen_14.O.19_OTA_019_all_2009281709_1026.zip
+  ROMZIP_NAME: OnePlus7TOxygen_14.O.19_OTA_019_all_2009281709_1026.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: OxygenOS-HELIOS-06-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
+  SECRETS_REPOS: ${{ secrets.REPOS }}
+  SECRETS_USERG: ${{ secrets.USERG }}
+  SECRETS_USERP: ${{ secrets.USERP }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
   SFDIRA2: cd /home/pfs/project/helios-gsis/Heliosbakerybills
@@ -29,27 +33,41 @@ jobs:
            
        - name: Setting up the SPICES and its SPICES
          run: |
+            sudo -E apt-get -qq update
             sudo -E apt-get -qq install git openjdk-8-jdk wget
             sudo -E apt-get -qq install python3
             sudo -E apt-get -qq install simg2img
             sudo apt-get install -y expect
+            
+       - name: tools
+                |     
             expect -c " 
-            spawn git clone ${{ secrets.REPO }} ErfanGSIs
+            spawn git clone $SECRETS_REPOS ErfanGSIs
             expect \"Username\"        
-            send \"${{ secrets.GHUSER }}\r\"
+            send \"$SECRETS_USERG\r\"
             expect \"Password\"        
-            send \"${{ secrets.GHPASS }}\r\"
+            send \"$SECRETS_USERP\r\"
             set timeout -1
             catch wait result
             interact"
             sudo chmod -R 777 ErfanGSIs
             cd ErfanGSIs
             sudo bash setup.sh
+            
+       
+       - name: DOWNLOADING THE FIRMWARE
+         run: cd ErfanGSIs && sudo wget $ROM_URL 
        
        - name: GENERATION OF BAKED GOODIES
          run: 
             |
-            cd ErfanGSIs && sudo ./gsi.sh $ROM_URL $ROM_NAME
+            cd ErfanGSIs && sudo ./dyn.sh $ROM_NAME $ROMZIP_NAME && sudo umount system && sudo rm -rf system
+            
+       - name: MOUNTING THE SYSTEM
+         run: cd ErfanGSIs/cache && sudo mkdir dynamic && sudo mount -o ro system.img dynamic 
+         
+       - name: MAKING THE COOKIES
+         run: cd ErfanGSIs && sudo ./gsi.sh cache/dynamic $ROM_NAME  
        
        - name: Zipping BOTH COOKIES
          run: |
