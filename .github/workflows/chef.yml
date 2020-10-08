@@ -55,7 +55,7 @@ jobs:
        - name: GENERATION OF BAKED GOODIES
          run: 
             |
-            cd ErfanGSIs && sudo ./gsi.sh $ROMZIP_NAME $ROM_NAME
+            cd ErfanGSIs && sudo ./url2GSI.sh $ROMZIP_NAME $ROM_NAME
             
              
        - name: Zipping BOTH COOKIES
