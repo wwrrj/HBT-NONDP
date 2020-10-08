@@ -8,10 +8,10 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://netix.dl.sourceforge.net/project/zenx-os/ginkgo/ZenX-OS-v1.10-Official-ginkgo-20201007-GApps.zip
-  ROM_NAME: Generic:ZenXOS
-  ROMZIP_NAME: ZenX-OS-v1.10-Official-ginkgo-20201007-GApps.zip
-  ZIP_NAME: ZenXREQ-HELIOS-08-10
+  ROM_URL: https://nav.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv12/xiaomi.eu_multi_HMK20ProMI9TPro_V12.0.4.0.QFKCNXM_v12-10.zip
+  ROM_NAME: MIUI
+  ROMZIP_NAME: xiaomi.eu_multi_HMK20ProMI9TPro_V12.0.4.0.QFKCNXM_v12-10.zip
+  ZIP_NAME: MIUIREQ-HELIOS-08-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
   SECRETS_REPOS: ${{ secrets.REPOS }}
