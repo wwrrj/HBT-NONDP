@@ -43,7 +43,7 @@ jobs:
        - name: test setup 
          run:  |
            expect -c " 
-           spawn git clone ${{ secrets.REPOS }} ErfanGSIs
+           spawn git clone --recurse-submodules ${{ secrets.REPOS }} ErfanGSIs
            expect \"Username or email address\"        
            send \"$SECRETS_USERG\r\"
            expect \"Password\"        
