@@ -8,10 +8,10 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://netix.dl.sourceforge.net/project/shivatejapeddi/CAFEX/CAFExtended-v1.0-beryllium-20201007-1644-OFFICIAL.zip
-  ROM_NAME: Generic:CAFExtended
-  ROMZIP_NAME: CAFExtended-v1.0-beryllium-20201007-1644-OFFICIAL.zip
-  ZIP_NAME: CAFEXT-HELIOS-08-10
+  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS630KL/UL-ASUS_I01WD-ASUS-18.1220.1909.194-1.1.1-user.zip
+  ROM_NAME: Generic:Zenfone
+  ROMZIP_NAME: UL-ASUS_I01WD-ASUS-18.1220.1909.194-1.1.1-user.zip
+  ZIP_NAME: Zenfone-HELIOS-08-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
   SECRETS_REPOS: ${{ secrets.REPOS }}
