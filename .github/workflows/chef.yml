@@ -40,20 +40,18 @@ jobs:
             sudo -E apt-get -qq install simg2img
             sudo apt-get install -y expect
             
-       - name: test setup 
-         run:  |
+       
+                 
+       - name: ACCESS GITHUB
+         run: |
            expect -c " 
-           spawn git clone --recurse-submodules ${{ secrets.REPOS }} ErfanGSIs
-           expect \"Username or email address\"        
-           send \"$SECRETS_USERG\r\"
-           expect \"Password\"        
-           send \"$SECRETS_USERP\r\"
-           set timeout -1
-           catch wait result
-           interact"
+           git clone --recurse-submodules https://github.com/issacabraham-git/Heliosbakertool.git
+           sudo chmod -R 777 ErfanGSIs
+           cd ErfanGSIs
+           sudo bash setup.sh
        
        - name: DOWNLOADING THE FIRMWARE
-         run: cd ErfanGSIs && sudo bash setup.sh && sudo wget $ROM_URL 
+         run: cd ErfanGSIs && sudo wget $ROM_URL 
        
        - name: GENERATION OF BAKED GOODIES
          run: 
