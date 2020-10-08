@@ -8,10 +8,10 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS630KL/UL-ASUS_I01WD-ASUS-18.1220.1909.194-1.1.1-user.zip
-  ROM_NAME: Generic:Zenfone
-  ROMZIP_NAME: UL-ASUS_I01WD-ASUS-18.1220.1909.194-1.1.1-user.zip
-  ZIP_NAME: Zenfone-HELIOS-08-10
+  ROM_URL: https://tdrive.ridhinabraham.workers.dev//MiuiMiX_2.2.0_sirius_20.3.19_v11-10.zip
+  ROM_NAME: MIUI
+  ROMZIP_NAME: MiuiMiX_2.2.0_sirius_20.3.19_v11-10.zip
+  ZIP_NAME: MIUIREQ-HELIOS-08-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
   SECRETS_REPOS: ${{ secrets.REPOS }}
