@@ -8,10 +8,10 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://iweb.dl.sourceforge.net/project/rmx1851/OxygenOS_sGSI_RMX1851/oxygenOS_OP7T_OOS10_sGSI_RMX1851_Zaxceed.zip
-  ROM_NAME: Generic:Oxygenport
-  ROMZIP_NAME: oxygenOS_OP7T_OOS10_sGSI_RMX1851_Zaxceed.zip
-  ZIP_NAME: oosportpb-HELIOS-07-10
+  ROM_URL: https://netix.dl.sourceforge.net/project/havoc-os/enchilada/Havoc-OS-v3.9-20200930-enchilada-Official-GApps.zip
+  ROM_NAME: Generic:HavocOS
+  ROMZIP_NAME: Havoc-OS-v3.9-20200930-enchilada-Official-GApps.zip
+  ZIP_NAME: HavocOS-HELIOS-08-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
   SECRETS_REPOS: ${{ secrets.REPOS }}
