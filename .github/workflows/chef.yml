@@ -8,10 +8,10 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://netix.dl.sourceforge.net/project/havoc-os/enchilada/Havoc-OS-v3.9-20200930-enchilada-Official-GApps.zip
-  ROM_NAME: Generic:HavocOS
-  ROMZIP_NAME: Havoc-OS-v3.9-20200930-enchilada-Official-GApps.zip
-  ZIP_NAME: HavocOS-HELIOS-08-10
+  ROM_URL: https://netix.dl.sourceforge.net/project/zenx-os/ginkgo/ZenX-OS-v1.10-Official-ginkgo-20201007-GApps.zip
+  ROM_NAME: Generic:ZenXOS
+  ROMZIP_NAME: ZenX-OS-v1.10-Official-ginkgo-20201007-GApps.zip
+  ZIP_NAME: ZenXREQ-HELIOS-08-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
   SECRETS_REPOS: ${{ secrets.REPOS }}
