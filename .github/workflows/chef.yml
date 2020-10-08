@@ -44,7 +44,6 @@ jobs:
                  
        - name: ACCESS GITHUB
          run: |
-           expect -c " 
            git clone --recurse-submodules https://github.com/issacabraham-git/Heliosbakertool.git
            sudo chmod -R 777 ErfanGSIs
            cd ErfanGSIs
