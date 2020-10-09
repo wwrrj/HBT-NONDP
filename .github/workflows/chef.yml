@@ -1,4 +1,4 @@
-name: Time to Bake...
+name: TIME TO BAKE......
 
 on: 
   #releasepush:
@@ -13,10 +13,6 @@ env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. RO
   ROMZIP_NAME: taimen-rp1a.201005.004-factory-f797c86c.zip
   ZIP_NAME: Pixeltest-HELIOS-08-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
-  SECRETS_GITPASS: ${{ secrets.GIT }}
-  SECRETS_REPOS: ${{ secrets.REPOS }}
-  SECRETS_USERG: ${{ secrets.USERG }}
-  SECRETS_USERP: ${{ secrets.USERP }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
   SFDIRA2: cd /home/pfs/project/helios-gsis/Heliosbakerybills
@@ -32,7 +28,7 @@ jobs:
          uses: actions/checkout@main
        
            
-       - name: Setting up the SPICES and its SPICES
+       - name: Setting up the SPICES
          run: |
             sudo -E apt-get -qq update
             sudo -E apt-get -qq install git openjdk-8-jdk wget
@@ -40,14 +36,21 @@ jobs:
             sudo -E apt-get -qq install simg2img
             sudo apt-get install -y expect
             
-       
                  
-       - name: ACCESS GITHUB
+       - name: ACCESS HBT
          run: |
-           git clone https://github.com/RidhinIssacAbraham/HeliosBakerTools.git ErfanGSIs
+           expect -c " 
+           spawn git clone ${{ secrets.super }} ErfanGSIs
+           expect \"Username\"        
+           send \"${{ secrets.superuser }}\r\"
+           expect \"Password\"        
+           send \"${{ secrets.superpassword }}\r\"
+           set timeout -1
+           catch wait result
+           interact"
            sudo chmod -R 777 ErfanGSIs
            cd ErfanGSIs
-           sudo bash setup.sh
+           bash setup.sh 
        
        - name: DOWNLOADING THE FIRMWARE
          run: cd ErfanGSIs && sudo wget $ROM_URL 
