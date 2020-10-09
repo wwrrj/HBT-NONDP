@@ -8,10 +8,10 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://dl3.smartisan.com/ota/rls.delta-ard10-mol-7.5.0-20200810-SEKSA.delta-user/202009201446/7.5.0.1-202009201220-user-dlt-1293671435.zip
-  ROM_NAME: SmartisanOS
-  ROMZIP_NAME: SmartisanOS-rp1a.201005.004-factory-78b8d156.zip
-  ZIP_NAME: SmartisanOS-HELIOS-08-10
+  ROM_URL: https://dl.google.com/dl/android/aosp/taimen-rp1a.201005.004-factory-f797c86c.zip
+  ROM_NAME: Pixel
+  ROMZIP_NAME: taimen-rp1a.201005.004-factory-f797c86c.zip
+  ZIP_NAME: Pixeltest-HELIOS-08-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   SECRETS_GITPASS: ${{ secrets.GIT }}
   SECRETS_REPOS: ${{ secrets.REPOS }}
