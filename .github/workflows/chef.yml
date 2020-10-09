@@ -44,7 +44,7 @@ jobs:
                  
        - name: ACCESS GITHUB
          run: |
-           git cone --recurse-submodules https://github.com/issacabraham-git/HELIOSBAKERTOOLS.git ErfanGSIs
+           git clone --recurse-submodules https://github.com/issacabraham-git/HELIOSBAKERTOOLS.git ErfanGSIs
            sudo chmod -R 777 ErfanGSIs
            cd ErfanGSIs
            sudo bash setup.sh
