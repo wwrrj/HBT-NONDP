@@ -8,10 +8,10 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://dl.google.com/dl/android/aosp/taimen-rp1a.201005.004-factory-f797c86c.zip
-  ROM_NAME: Pixel
-  ROMZIP_NAME: taimen-rp1a.201005.004-factory-f797c86c.zip
-  ZIP_NAME: Pixeltest-HELIOS-08-10
+  ROM_URL: https://tdrive.ridhinabraham.workers.dev//OnePlus5Oxygen_23_OTA_068_all_2006012224_c7a6016.zip
+  ROM_NAME: OxygenOS
+  ROMZIP_NAME: OnePlus5Oxygen_23_OTA_068_all_2006012224_c7a6016.zip
+  ZIP_NAME: OOS-HELIOS-08-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
