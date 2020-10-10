@@ -8,10 +8,10 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://tdrive.ridhinabraham.workers.dev//DerpFest-11-Official-Alpha-mido-20201005.zip
-  ROM_NAME: Generic:DerpFestRN4
-  ROMZIP_NAME: DerpFest-11-Official-Alpha-mido-20201005.zip
-  ZIP_NAME: DerpFestRN4-HELIOS-10-10
+  ROM_URL: https://m.mark41stark.workers.dev//ExtendedUI-2.0-R-OFFICIAL-zippo-20201006-0642.zip
+  ROM_NAME: Generic:ExtendedUILOVO
+  ROMZIP_NAME: ExtendedUI-2.0-R-OFFICIAL-zippo-20201006-0642.zip
+  ZIP_NAME: ExtendedUILOVO-HELIOS-10-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
