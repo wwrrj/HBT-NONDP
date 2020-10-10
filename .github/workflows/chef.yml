@@ -8,10 +8,10 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus5Oxygen/OnePlus5Oxygen_23.J.68_GLO_068_2006012224/OnePlus5Oxygen_23_OTA_068_all_2006012224_c7a6016.zip
-  ROM_NAME: OxygenOS
-  ROMZIP_NAME: OnePlus5Oxygen_23_OTA_068_all_2006012224_c7a6016.zip
-  ZIP_NAME: oos5test-HELIOS-10-10
+  ROM_URL: https://tdrive.ridhinabraham.workers.dev//DerpFest-11-Official-Alpha-mido-20201005.zip
+  ROM_NAME: Generic:DerpFestRN4
+  ROMZIP_NAME: DerpFest-11-Official-Alpha-mido-20201005.zip
+  ZIP_NAME: DerpFestRN4-HELIOS-10-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
