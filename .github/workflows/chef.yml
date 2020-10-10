@@ -50,7 +50,7 @@ jobs:
        - name: GENERATION OF BAKED GOODIES
          run: 
             |
-            cd ErfanGSIs && sudo ./make.sh DerpFest-11-Official-Alpha-mido-20201005.zip $ROM_NAME AB && sudo ./make.sh $ROMZIP_NAME $ROM_NAME Aonly
+            cd ErfanGSIs && sudo ./make.sh OxygenOS-10-port-Stable-Whyred-20201005.zip $ROM_NAME AB && sudo ./make.sh $ROMZIP_NAME $ROM_NAME Aonly
             
              
        - name: Zipping BOTH COOKIES
