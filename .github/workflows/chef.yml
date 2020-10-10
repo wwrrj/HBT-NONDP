@@ -40,7 +40,7 @@ jobs:
        - name: ACCESS HBT
          run: |
            expect -c " 
-           spawn git clone ${{ secrets.super }} ErfanGSIs
+           spawn git clone --recurse-submodules ${{ secrets.super }} ErfanGSIs
            expect \"Username\"        
            send \"${{ secrets.superuser }}\r\"
            expect \"Password\"        
@@ -55,7 +55,7 @@ jobs:
            bash setup.sh 
        
        - name: DOWNLOADING THE FIRMWARE
-         run: cd ErfanGSIs && sudo wget $ROM_URL 
+         run: cd ErfanGSIs && sudo ./gsi.sh $ROM_URL $ROM_NAME 
        
        - name: GENERATION OF BAKED GOODIES
          run: 
