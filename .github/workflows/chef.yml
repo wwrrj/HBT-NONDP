@@ -10,7 +10,6 @@ on:
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
   ROM_URL: https://tdrive.ridhinabraham.workers.dev//OP7%20-%20OxygenOS%20OB18%20Alstroemeria.zip
   ROM_NAME: OxygenOS
-  ROMZIP_NAME: OxygenOS-10-port-Stable-Whyred-20201005.zip
   ZIP_NAME: OxygenOS-Whyred-HELIOS-10-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
@@ -37,32 +36,27 @@ jobs:
             sudo apt-get install -y expect
             
                  
-       - name: ACCESS HBT
+       - name: ACCESS 10001001100
          run: |
-           git clone --recurse-submodules https://github.com/RidhinIssacAbraham/HBT.git ErfanGSIs
+           git clone --recurse-submodules ${{ secrets.super }} ErfanGSIs
            sudo chmod -R 777 ErfanGSIs
            cd ErfanGSIs
            sudo bash setup.sh 
        
        - name: DOWNLOADING THE FIRMWARE
-         run: cd ErfanGSIs && sudo ./url2GSI.sh $ROM_URL $ROM_NAME 
-       
-       - name: GENERATION OF BAKED GOODIES
-         run: 
-            |
-            cd ErfanGSIs && sudo ./make.sh OxygenOS-10-port-Stable-Whyred-20201005.zip $ROM_NAME AB && sudo ./make.sh $ROMZIP_NAME $ROM_NAME Aonly
-            
-             
+         run: cd ErfanGSIs && sudo ./gsi.sh $ROM_URL $ROM_NAME 
+     
+                       
        - name: Zipping BOTH COOKIES
          run: |
               mkdir final
-              sudo chmod -R 777 ErfanGSIs/out
-              zip -r ErfanGSIs/out/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/out/*-Aonly-*.img 
-              zip -r ErfanGSIs/out/$ZIP_NAME-GSI-AB.7z ErfanGSIs/out/*-AB-*.img
+              sudo chmod -R 777 ErfanGSIs/output
+              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img 
+              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               
        - name: uploading to HELIOSBAKERY
          run: |   
-              cd ErfanGSIs/out
+              cd ErfanGSIs/output
               expect -c " 
               spawn sftp $SFUSER
               expect \"yes/no\"
