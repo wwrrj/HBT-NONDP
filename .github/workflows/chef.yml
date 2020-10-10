@@ -39,7 +39,7 @@ jobs:
                  
        - name: ACCESS HBT
          run: |
-           spawn git clone --recurse-submodules https://github.com/RidhinIssacAbraham/HBT.git ErfanGSIs
+           git clone --recurse-submodules https://github.com/RidhinIssacAbraham/HBT.git ErfanGSIs
            sudo chmod -R 777 ErfanGSIs
            cd ErfanGSIs
            sudo bash setup.sh 
