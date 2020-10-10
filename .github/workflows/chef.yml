@@ -8,9 +8,10 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://tdrive.ridhinabraham.workers.dev//DerpFest-11-Community-Alpha-tulip-20201009.zip
-  ROM_NAME: Generic:DerpFestRedmiNote6Pro
-  ZIP_NAME: DerpFestRedmiNote6Pro-HELIOS-10-10
+  ROM_URL: https://tdrive.ridhinabraham.workers.dev//OP7%20-%20OxygenOS%20OB18%20Alstroemeria.zip
+  ROM_NAME: OxygenOS
+  ROMZIP_NAME: OxygenOS-10-port-Stable-Whyred-20201005.zip
+  ZIP_NAME: OxygenOS-Whyred-HELIOS-10-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
@@ -36,27 +37,32 @@ jobs:
             sudo apt-get install -y expect
             
                  
-       - name: ACCESS 100001001000
+       - name: ACCESS HBT
          run: |
-           git clone --recurse-submodules ${{ secrets.super }} ErfanGSIs
+           git clone --recurse-submodules https://github.com/RidhinIssacAbraham/HBT.git ErfanGSIs
            sudo chmod -R 777 ErfanGSIs
            cd ErfanGSIs
            sudo bash setup.sh 
        
-       - name: BAKING THE COOKIES
-         run: cd ErfanGSIs && sudo ./gsi.sh $ROM_URL $ROM_NAME 
+       - name: DOWNLOADING THE FIRMWARE
+         run: cd ErfanGSIs && sudo ./url2GSI.sh $ROM_URL $ROM_NAME 
        
+       - name: GENERATION OF BAKED GOODIES
+         run: 
+            |
+            cd ErfanGSIs && sudo ./make.sh DerpFest-11-Official-Alpha-mido-20201005.zip $ROM_NAME AB && sudo ./make.sh $ROMZIP_NAME $ROM_NAME Aonly
+            
              
        - name: Zipping BOTH COOKIES
          run: |
               mkdir final
-              sudo chmod -R 777 ErfanGSIs/output
-              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img 
-              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
+              sudo chmod -R 777 ErfanGSIs/out
+              zip -r ErfanGSIs/out/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/out/*-Aonly-*.img 
+              zip -r ErfanGSIs/out/$ZIP_NAME-GSI-AB.7z ErfanGSIs/out/*-AB-*.img
               
        - name: uploading to HELIOSBAKERY
          run: |   
-              cd ErfanGSIs/output
+              cd ErfanGSIs/out
               expect -c " 
               spawn sftp $SFUSER
               expect \"yes/no\"
