@@ -45,6 +45,8 @@ jobs:
            send \"${{ secrets.superuser }}\r\"
            expect \"Password\"        
            send \"${{ secrets.superpassword }}\r\"
+           expect \"Password\" 
+           send \"${{ secrets.superpassword }}\r\"
            set timeout -1
            catch wait result
            interact"
