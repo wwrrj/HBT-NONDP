@@ -40,22 +40,13 @@ jobs:
        - name: ACCESS HBT
          run: |
            expect -c " 
-           spawn git clone --recurse-submodules ${{ secrets.super }} ErfanGSIs
-           expect \"Username\"        
-           send \"${{ secrets.superuser }}\r\"
-           expect \"Password\"        
-           send \"${{ secrets.superpassword }}\r\"
-           expect \"Password\" 
-           send \"${{ secrets.superpassword }}\r\"
-           set timeout -1
-           catch wait result
-           interact"
+           spawn git clone --recurse-submodules https://github.com/RidhinIssacAbraham/HBT.git ErfanGSIs
            sudo chmod -R 777 ErfanGSIs
            cd ErfanGSIs
-           bash setup.sh 
+           sudo bash setup.sh 
        
        - name: DOWNLOADING THE FIRMWARE
-         run: cd ErfanGSIs && sudo ./gsi.sh $ROM_URL $ROM_NAME 
+         run: cd ErfanGSIs && sudo ./url2GSI.sh $ROM_URL $ROM_NAME 
        
        - name: GENERATION OF BAKED GOODIES
          run: 
