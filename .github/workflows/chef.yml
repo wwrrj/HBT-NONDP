@@ -60,19 +60,19 @@ jobs:
        - name: GENERATION OF BAKED GOODIES
          run: 
             |
-            cd ErfanGSIs && sudo ./gsi.sh $ROMZIP_NAME $ROM_NAME
+            cd ErfanGSIs && sudo ./make.sh $ROMZIP_NAME $ROM_NAME AB && sudo ./make.sh $ROMZIP_NAME $ROM_NAME Aonly
             
              
        - name: Zipping BOTH COOKIES
          run: |
               mkdir final
-              sudo chmod -R 777 ErfanGSIs/output
-              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img 
-              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
+              sudo chmod -R 777 ErfanGSIs/out
+              zip -r ErfanGSIs/out/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/out/*-Aonly-*.img 
+              zip -r ErfanGSIs/out/$ZIP_NAME-GSI-AB.7z ErfanGSIs/out/*-AB-*.img
               
        - name: uploading to HELIOSBAKERY
          run: |   
-              cd ErfanGSIs/output
+              cd ErfanGSIs/out
               expect -c " 
               spawn sftp $SFUSER
               expect \"yes/no\"
