@@ -8,10 +8,10 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://tdrive.ridhinabraham.workers.dev//ZenX-OS-v1.10-Official-kenzo-20201008.zip
-  ROM_NAME: Generic:ZenxOSRN3
-  ROMZIP_NAME: ZenX-OS-v1.10-Official-kenzo-20201008.zip
-  ZIP_NAME: ZenxOSRN3-HELIOS-10-10
+  ROM_URL: https://tdrive.ridhinabraham.workers.dev//DerpFest-11-Official-Alpha-mido-20201005.zip
+  ROM_NAME: Generic:DerpFest-Mido
+  ROMZIP_NAME: DerpFest-11-Official-Alpha-mido-20201005.zip
+  ZIP_NAME: DerpFest-Mido-HELIOS-10-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
@@ -53,7 +53,6 @@ jobs:
            sudo chmod -R 777 ErfanGSIs
            cd ErfanGSIs
            bash setup.sh 
-           sudo ./gsi.sh $ROM_URL $ROM_NAME 
        
        - name: DOWNLOADING THE FIRMWARE
          run: cd ErfanGSIs && sudo wget $ROM_URL 
