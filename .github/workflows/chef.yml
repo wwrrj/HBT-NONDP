@@ -44,7 +44,7 @@ jobs:
            sudo bash setup.sh 
        
        - name: DOWNLOADING THE FIRMWARE
-         run: cd ErfanGSIs && sudo ./gsi.sh $ROM_URL $ROM_NAME 
+         run: cd ErfanGSIs && sudo ./url2GSI.sh $ROM_URL $ROM_NAME 
      
                        
        - name: Zipping BOTH COOKIES
