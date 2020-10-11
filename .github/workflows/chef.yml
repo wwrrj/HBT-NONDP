@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://dl.google.com/dl/android/aosp/taimen-rp1a.201005.004-factory-f797c86c.zip
-  ROM_NAME: Pixel
-  ZIP_NAME: Pixeltest-HELIOS-11-10
+  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS660KL/UL-ASUS_I001_1-ASUS-16.0631.1910.64-1.1.253-user.zip
+  ROM_NAME: RogUI
+  ZIP_NAME: RogUI9-HELIOS-11-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
