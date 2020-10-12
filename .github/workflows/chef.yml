@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://pdrive.priyo.workers.dev/0://miui_LAURELSPROUTGlobal_V11.0.21.0.QFQMIXM_047615acf7_10.0.zip
+  ROM_URL: https://pdrive.priyo.workers.dev/0://AbhiX_ROG_Edition_V2_20.9.24.zip
   ROM_NAME: MIUI
-  ZIP_NAME: MIUI-ROG-Edition-V2-HELIOS-11-10
+  ZIP_NAME: MIUI-ROG-Edition-V2-HELIOS-12-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
