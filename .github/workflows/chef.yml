@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus6Oxygen/OnePlus6Oxygen_22.J.48_GLO_048_2010042239/OnePlus6Oxygen_22.J.48_OTA_048_all_2010042239_c0c1fee2ee.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: OxygenOSReq-From-OP6-HELIOS-12-10
+  ROM_URL: https://tdrive.rahul9964.workers.dev/0:/violet/syberia_violet-v4.0-20201008-2102-UNOFFICIAL.zip
+  ROM_NAME: Generic:SyberiaOS
+  ZIP_NAME: SyberiaOS-HELIOS-12-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
