@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://tdrive.rahul9964.workers.dev/0:/violet/syberia_violet-v4.0-20201008-2102-UNOFFICIAL.zip
-  ROM_NAME: Generic:SyberiaOS
-  ZIP_NAME: SyberiaOS-HELIOS-12-10
+  ROM_URL: https://download.meizu.com/Firmware/Flyme/note9/8.20.9.30/cn_daily/20200930003719/61510e16/update.zip
+  ROM_NAME: Flyme
+  ZIP_NAME: FlymeNote9-HELIOS-12-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
