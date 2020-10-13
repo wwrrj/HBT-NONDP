@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/note9/8.20.9.30/cn_daily/20200930003719/61510e16/update.zip
-  ROM_NAME: Flyme
-  ZIP_NAME: FlymeNote9-HELIOS-12-10
+  ROM_URL: http://bigota.d.miui.com/20.10.12/miui_GINKGO_20.10.12_8241603c10_10.0.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUIGINKGO-HELIOS-13-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
