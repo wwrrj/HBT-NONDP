@@ -9,7 +9,7 @@ on:
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
   ROM_URL: https://tdrive.ridhinabraham.workers.dev//MK100.0-m1923-202010130527-NIGHTLY.zip
-  ROM_NAME: Mokee10
+  ROM_NAME: Generic:Mokee10
   ZIP_NAME: Mokee10-HELIOS-14-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
