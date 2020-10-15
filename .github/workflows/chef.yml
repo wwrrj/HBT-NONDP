@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://tdrive.ridhinabraham.workers.dev//EvolutionX_4.7_phoenix-10.0-20201001-0609-OFFICIAL.zip
-  ROM_NAME: Generic:EvolutionX
-  ZIP_NAME: EvolutionX-Helios-15-10
+  ROM_URL: https://tdrive.ridhinabraham.workers.dev//miui_GINKGO_20.10.15_c1e6c35dc4_10.0.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI-GINKGO-Helios-15-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
