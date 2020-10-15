@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://tdrive.ridhinabraham.workers.dev//UL-I002D-WW-29.12.18.14-user.zip
-  ROM_NAME: ZenUI
-  ZIP_NAME: Zenfone-7-Helios-15-10
+  ROM_URL: https://tdrive.elytra8.workers.dev/JAV_0.1.4.ESTJV/Jav_0.1.4_Lavender_v12.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI-Jav-Helios-15-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
