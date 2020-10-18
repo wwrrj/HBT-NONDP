@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://tdrive.ridhinabraham.workers.dev//YAAP-11-Alpha-yaap_guacamole-20201013.zip
-  ROM_NAME: Generic:YAAP11ALPHA
-  ZIP_NAME: yaap-11-alpha-Helios-15-10
+  ROM_URL: https://tdrive.elytra8.workers.dev/OnePlus6Hydrogen_22_OTA_046_all_2009071932_882b6f68d6304199.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: HydrogenOS-Helios-18-10
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
