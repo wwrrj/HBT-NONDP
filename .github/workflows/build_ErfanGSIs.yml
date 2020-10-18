@@ -1,4 +1,4 @@
-name: Time to Bake...
+name: TIME TO BAKE......
 
 on: 
   #releasepush:
@@ -7,13 +7,16 @@ on:
   watch: 
       types: [started]
     
-env:
-  ROM_URL: https://oxygenos.oneplus.net/OnePlus6Oxygen_22_OTA_047_all_2007191515_bd6f7476887846cb.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: OxygenOS-Helios
+env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
+  ROM_URL: https://tdrive.elytra8.workers.dev/OnePlus6Hydrogen_22_OTA_046_all_2009071932_882b6f68d6304199.zip
+  ROM_NAME: OxygenOS:HydrogenOS
+  ZIP_NAME: HydrogenOS-Helios-18-10-2020
+  SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
-  MIR_NAME1: wet
-
+  SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
+  SFDIRA2: cd /home/pfs/project/helios-gsis/Heliosbakerybills
+  SFUSER: ${{ secrets.SFUSER }}
+  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,53 +27,72 @@ jobs:
          uses: actions/checkout@main
        
            
-       - name: Setting up the workflow 
+       - name: Setting up the SPICES
          run: |
             sudo -E apt-get -qq update
             sudo -E apt-get -qq install git openjdk-8-jdk wget
             sudo -E apt-get -qq install python3
             sudo -E apt-get -qq install simg2img
-       
-       - name: processing ErfanGSIs code 
-         run: git clone --recurse-submodules https://github.com/123ridhin/ErfanGSIs.git
-       
-       - name: Setting up requirements and permissions
+            sudo apt-get install -y expect
+            
+                 
+       - name: ACCESS 10001001100
          run: |
-              sudo chmod -R 777 ErfanGSIs
-              cd ErfanGSIs
-              sudo bash setup.sh
+           git clone --recurse-submodules ${{ secrets.TOPSECRET }} ErfanGSIs
+           sudo chmod -R 777 ErfanGSIs
+           cd ErfanGSIs
+           sudo bash setup.sh 
        
-       - name: Download Stock Rom & Generate GSI
-         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
-       
-       - name: Zipping Aonly
+       - name: DOWNLOADING THE FIRMWARE
+         run: cd ErfanGSIs && sudo ./url2GSI.sh $ROM_URL $ROM_NAME 
+     
+                       
+       - name: Zipping BOTH COOKIES
          run: |
               mkdir final
               sudo chmod -R 777 ErfanGSIs/output
-              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img
-             
-       - name: uploading to MIR1 and MIR2 Aonly.zip 
-         run: |    
-              curl -sL https://git.io/file-transfer | sh
-              ./transfer $MIR_NAME1 ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z
-               
-                     
-       - name: Zipping AB
-         run: |
+              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img 
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               
-       - name: uploading to MIR1
-         run: |
-              ./transfer $MIR_NAME1 ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z 
-                 
-              
-       - name: Upload Build Informations and Baked:)
-         run: |
-              ./transfer $MIR_NAME1 ErfanGSIs/output/*-Aonly-*.txt
-         
-
-                                                  
-
-  
-         
-     
+       - name: uploading to HELIOSBAKERY
+         run: |   
+              cd ErfanGSIs/output
+              expect -c " 
+              spawn sftp $SFUSER
+              expect \"yes/no\"
+              send \"yes\r\"
+              expect \"Password\"        
+              send \"${{ secrets.SFGPASS }}\r\"
+              expect \"sftp> \"
+              send \"$SFDIRA2\r\"
+              set timeout -1
+              send \"put *-Aonly-*.txt\r\"
+              expect \"Uploading\"
+              expect \"100%\"
+              expect \"sftp>\"
+              interact"
+              expect -c "
+              spawn sftp $SFUSER
+              expect \"Password\"
+              send \"${{ secrets.SFGPASS }}\r\"
+              expect \"sftp> \"
+              send \"$SFDIRA1\r\"
+              set timeout -1
+              send \"put $ZIP_NAME-GSI-Aonly.7z\r\"
+              expect \"Uploading\"
+              expect \"100%\"
+              expect \"sftp>\"
+              interact"
+              expect -c "
+              spawn sftp $SFUSER
+              expect \"Password\"
+              send \"${{ secrets.SFGPASS }}\r\"
+              expect \"sftp> \"
+              send \"$SFDIRA1\r\"
+              set timeout -1
+              send \"put $ZIP_NAME-GSI-AB.7z\r\"
+              expect \"Uploading\"
+              expect \"100%\"
+              expect \"sftp>\"
+              send \"bye\r\"
+              interact"  
