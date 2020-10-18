@@ -9,7 +9,7 @@ on:
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
   ROM_URL: https://tdrive.elytra8.workers.dev/OnePlus6Hydrogen_22_OTA_046_all_2009071932_882b6f68d6304199.zip
-  ROM_NAME: OxygenOS
+  ROM_NAME: OxygenOS:HydrogenOS
   ZIP_NAME: HydrogenOS-Helios-18-10-2020
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
