@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://tdrive.elytra8.workers.dev/OnePlus6Hydrogen_22_OTA_046_all_2009071932_882b6f68d6304199.zip
-  ROM_NAME: OxygenOS:HydrogenOS
-  ZIP_NAME: HydrogenOS-Helios-18-10-2020
+  ROM_URL: https://tdrive.ridhinabraham.workers.dev//Nusantara_v1.1-lavender-Gapps-15092020-OFFICIAL-0819.zip
+  ROM_NAME: Generic:Nusantra
+  ZIP_NAME: Nusantra-Note7-Helios-18-10-2020
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
