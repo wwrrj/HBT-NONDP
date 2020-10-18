@@ -1,40 +1,41 @@
-## Using Erfan's Tools
+                                𝙃𝙚𝙡𝙞𝙤𝙨𝘽𝙖𝙠𝙚𝙧 This Project should not be shared with *others*. those have given access can **Bake**
 
+### INSTRUCTIONS ABOUT USING THIS TOOL: ###
+### you should change the following env from the workflow : ###
+ 
 
-Without Erfan's Scripts all this would be not possible . This tool uses the help from GitHub Actions and Erfan's tool to complete the builds . 
+### change ROM_URL,  ROM_NAME,  ZIP_NAME,  ROMZIP_NAME  respectivley. ROM_NAME is case sensitive  ### 
+ 
+  <<   ALL THESE ANDROID 10 >>> 
+ 
+ 
+SUPPORTED ROM LIST 
+| ----------------------- |
+| 1.ColorOS               |
+| 2.Flyme                 |
+| 3.Generic               |                                                         
+| 4.JoyUI                 |
+| 5.MIUI                  |                              
+| 6.Moto                  |
+| 7.Nubia                 |
+| 8.OneUI{Bad perfomance} |
+| 9.OxygenOS              |
+| 10.Pixel                |
+| 11.RazerUI              |
+| 12.RogUI                |
+| 13.SmartisanOS          |
+| 14.VOS                  |
+| 15.Xperia               |
+| 16.ZenUI                |
+| 17.ZUI                  |
+                             
+                             
+  << THESE ARE ANDROID 11 >>      
+         
+   SUPPORTED ROM LIST                            
+|  -------- |  
+| 1.Generic |
+| 2.MIUI    |
+| 3.Pixel   |
 
-with the help of this tool we will be able to build GSIs much more quickly to meet the users requiremnets. 
-
-Android 9 : 
-
-ColorOS Flyme Generic MIUI Moto Nubia OneUI OxygenOS Pixel Xperia ZUI ZenUI JoyUI  RogUI  VOS 
-
-Android 10:
-
-Generic MIUI OxygenOS Pixel ZenUI ColorOS
-
-
-
-Please use any of the servers from below . If they are not uploading or if its getting long time build , change the upload server
-
-| config | site name | website |
-|  ----  | ----  |  ----  |
-|  arp  |  Airportal  |  https://aitportal.cn/ |
-|  bit  |  bitSend  |  https://bitsend.jp/ |
-|  cat  |  CatBox  |  https://catbox.moe/
-|  cow  |  CowTransfer  |  https://www.cowtransfer.com/ |
-|  gof  |  GoFile  |  https://gofile.io/ |
-|  tmp  |  TmpLink  |  https://tmp.link/ |
-|  vim  |  Vim-cn  |  https://img.vim-cn.com/ |
-|  wss  |  WenShuShu  |  https://www.wenshushu.cn/ |
-|  wet  |  WeTransfer  |  https://wetransfer.com/ |
-|  flk  |  FileLink  |  https://filelink.io/ |
-|  trs  |  Transfer.sh  |  https://transfer.sh/ |
-|  lzs  |  Lanzous  |  https://www.lanzous.com/ |
-
-
-
-
-                   
-                         
-                        
+                            << THESE ARE ANDROID 11 >>
