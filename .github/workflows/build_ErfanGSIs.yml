@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://master.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv11/xiaomi.eu_multi_HMNote7_V11.0.2.0.QFGCNXM_v11-10.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI-NOTE7-Helios-18-10-2020
+  ROM_URL: https://tdrive.ridhinabraham.workers.dev//RROS-Q-8.6.3-20201018-hotdogb-Official.zip
+  ROM_NAME: Generic:RR
+  ZIP_NAME: RR-Helios-19-10-2020
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
