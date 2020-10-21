@@ -8,7 +8,7 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://tdrive.elytra8.workers.dev/miui_LAVENDEREEAGlobal_V12.0.2.0.QFGEUXM_d20d8676c8_10.0.zip
+  ROM_URL: https://tdrive.elytra8.workers.dev/miuidfghfghfgh_LAVENDEREEAGlobal_V12.0.2.0.QFGEUXM_d20d8676c8_10.0.zip
   ROM_NAME: MIUI
   ZIP_NAME: MIUILavender-Helios-21-10-2020
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
