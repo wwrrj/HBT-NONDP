@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://tdrive.elytra8.workers.dev/VOS%203.0%20Aris%20Lavender%20By%20@ShaRukh007.zip
-  ROM_NAME: VOS
-  ZIP_NAME: VOS-Helios-21-10-2020
+  ROM_URL: https://tdrive.elytra8.workers.dev/EvolutionX_4.7_enchilada-10.0-20201001-1549-OFFICIAL.zip
+  ROM_NAME: Generic:EvolutionX
+  ZIP_NAME: EVOX-Helios-21-10-2020
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
