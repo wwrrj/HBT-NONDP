@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://tdrive.elytra8.workers.dev/xiaomi.eu_multi_HMNote7_20.10.22_v12-10.zip
-  ROM_NAME: MIUI:MIUIEU
-  ZIP_NAME: MIUIEU-Helios-23-10-2020
+  ROM_URL: https://tdrive.ridhinabraham.workers.dev//RMX1931EX_11_OTA_1320_all_L8f64TYO0FSW.ozip
+  ROM_NAME: ColorOS
+  ZIP_NAME: RealmeUI:ColorOS-X2PRO-Helios-23-10-2020
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
