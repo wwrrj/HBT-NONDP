@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://assorted.downloads.oppo.com/firmware/CPH1969/CPH1969EX_11_OTA_1310_all_zdahyXz4N7Q5.ozip
-  ROM_NAME: ColorOS:CPH1969
-  ZIP_NAME: ColorOS/Realme-HeliosBakerTools-24-10-2020
+  ROM_URL: https://download.c.realme.com/osupdate/RMX1901EX_11_OTA_1060_all_bTwG4FpJt4Bm.ozip
+  ROM_NAME: ColorOS:RMX1901
+  ZIP_NAME: ColorOS/Realme2-HeliosBakerTools-24-10-2020
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
