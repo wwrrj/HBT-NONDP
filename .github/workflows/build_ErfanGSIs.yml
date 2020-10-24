@@ -8,9 +8,9 @@ on:
       types: [started]
     
 env:              #change ROM_URL,ROM_NAME,ZIP_NAME,ROMZIP_NAME respectivley. ROM_NAME is case sensitive 
-  ROM_URL: https://master.dl.sourceforge.net/project/cesiumos-org//beryllium/CesiumOS-v3.0-beryllium-20201023-1457-BETA.zip
-  ROM_NAME: Generic:CesiumOS
-  ZIP_NAME: CesiumOS-HeliosBakerTools-24-10-2020
+  ROM_URL: https://excellmedia.dl.sourceforge.net/project/legionrom/vince/LegionOS-v3.2-vince-20201012-OFFICIAL-Vanilla.zip
+  ROM_NAME: Generic:LegionOS
+  ZIP_NAME: LegionOS-HeliosBakerTools-24-10-2020
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   TZ: Middle-East/Kuwait
   SFDIRA1: cd /home/pfs/project/helios-gsis/HeliosBakery
